@@ -108,7 +108,12 @@ a:hover {
 /* ---- INDEX/HOME ---- */
 
     /* Header & Nav section */
-
+    header {
+        background-color: #fefefe;
+        padding: 10px; /* Adds a 10px inner spacing to all sides */
+        margin: margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+        border-bottom: 3px solid #4a4a4a;
+      }
 
     /* Hero Section */
 
