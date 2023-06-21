@@ -1,0 +1,155 @@
+/*
+Colors used:
+Background Color (Whisper): #ebebeb;
+Background Color 2 Containers (White): #fefefe;
+Primary Color (Night): #141414;
+Secondary Color (Dim Gray): #737373;
+Accent Color -1 (Dark Cyan): #1f8f89;
+Accent Color -2 (Harvest Gold): #e1982b or rgb(175,131,134);
+*/
+
+/*
+Typography used:
+Font Family; DM Sans 
+*/
+
+/* Typography*/
+body {
+    background-color: #F4F4F4;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px; /* Sets the font size to 16px */
+    font-weight: 400; /* Sets the font weight to 400 */
+    line-height: 1.5; /* Sets the line-height to 1.5 * the font-size */
+    color: #474747;
+}
+
+h1 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2.75em;
+    font-weight: 800;
+    line-height: 1.0;
+    color:#141414
+}
+
+h2 {
+    font-size: 2.35em;
+    font-weight: 700;
+    line-height: 1.0;
+    color:#141414
+}
+
+h3 {
+    font-size: 1.75em;
+    font-weight: 700;
+    line-height: 1.0;
+    color: #292929;
+}
+h4 {
+    font-size: 1.25em;
+    font-weight: 500;
+    line-height: 1.0;
+    color:#333333;
+}
+
+
+/* Links */
+a {
+    color: #1F8F89;
+    font-weight: 700;
+    text-decoration: none; /* No underlining */
+}
+
+a:hover {
+    color: #23B9B0; /* change the link text color to lighter teal on hover */
+    text-decoration: none; /* No underlining */
+}
+
+.nav_link {
+    text-transform: uppercase;
+}
+
+
+/* Buttons*/
+.button {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #e1982b;
+    color: #fefefe; /* needed to override the default link color */
+    font-weight: 700;
+    padding: 20px 24px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.2s opacity;
+  }
+
+  .button:hover {
+    background-color: #F5AC3E;
+    color: #fefefe;
+  }
+
+  .ghost_button {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    color: #e1982b; /* needed to override the default link color */
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .ghost_button:hover {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    color: #e1982b; /* needed to override the default link color */
+    text-decoration: underline;
+  }
+
+  /* Images */
+  img {
+    width: 100%;
+  }
+
+/* ---- INDEX/HOME ---- */
+
+    /* Header & Nav section */
+
+
+    /* Hero Section */
+
+
+    /* Projects Section */
+
+
+    /* Footer & Contact Section */
+
+
+
+
+/* ---- ABOUT ---- */
+
+    /* Header & Nav section */
+
+
+    /* Hero Section */
+
+
+    /* My Story */
+
+
+    /* Skills & Tools */
+
+
+    /* Footer & Contact Section */
+
+
+/* ---- PORTFOLIO PROJECTS ---- */
+
+    /* Header & Nav section */
+
+
+    /* Hero Section */
+
+
+    /* My Story */
+
+
+    /* Skills & Tools */
+
+    
+    /* Footer & Contact Section */

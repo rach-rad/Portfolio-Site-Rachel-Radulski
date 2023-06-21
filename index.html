@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Wix+Madefor+Display:wght@700;800&display=swap" rel="stylesheet">   
     <title>Rachel Radulski's Portfolio</title>
 </head>
 <body>
@@ -17,10 +27,9 @@
               </picture> <!-- close logo image-->
             <nav>
                 <ul> <!-- open navigation links -->
-                  <li><a href="index.html">Work</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="modish_nest.html">Project: Modish Nest</a></li>
-                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="index.html" class="nav_link">Work</a></li>
+                  <li><a href="about.html" class="nav_link">About</a></li>
+                  <li><a href="#contact" class="nav_link">Contact</a></li>
                 </ul> <!-- close navigation links -->
               </nav> 
         </div>
@@ -31,9 +40,8 @@
         <!-- For the hero section -->
          <div> <!-- whole section block-->
             <div> <!-- container/wrapper -->
-                <h1>Hi, I'm Rachel Radulski
-                <br><span>a dedicated UI/UX designer with a passion for creating intuitive and visually captivating user experiences.</span>
-                </h1>
+                <h3>Hi, I'm Rachel Radulski</h3>
+                <h4>a dedicated UI/UX designer with a passion for creating intuitive and visually captivating user experiences.</h4>
                 <p>Browse through my portfolio to discover my latest design projects.</p>
             </div> <!-- container/wrapper -->
         </div> <!-- whole section block-->
@@ -41,7 +49,7 @@
     <!-- For your work projects -->
         <div> <!-- whole section block-->
             <div> <!-- container/wrapper -->
-                <h2>My Work</h2>
+                <h1>My Work</h1>
                 <!-- open project one: modish nest -->
                 <div> <!-- open row that holds (2) columns for project one -->
                     <div> <!-- open first column: for image -->
@@ -58,7 +66,7 @@
                         <p> <!-- open paragraph: project one skills -->
                             This project exemplifies expertise in advanced UI skills including interactive animation, functionalism, and responsive design. Additionally, comprehensive user testing was conducted to refine the UX, ensuring a captivating and cohesive brand experience.
                         </p> <!-- end paragraph: project one skills -->
-                        <a href="">Read more</a> <!-- button or link label -->
+                        <a href="modish_nest.html" class="button">View Project</a> <!-- button -->
                     </div> <!-- end second column: for text -->
                 </div> <!-- end row that holds (2) columns for project one -->
                 <!-- end project one: modish nest-->
@@ -78,7 +86,7 @@
                         <p> <!-- open paragraph: project two skills -->
                             This project showcases skills in applying iOS design guidelines and Material Design principles to create a cohesive design across both platforms. Additionally, it involves incorporating existing mobile design patterns, conducting app analysis, and implementing native sound effects and haptics. This app is complemented by a prototype that accurately represents the final user interface.
                         </p> <!-- end paragraph: project two skills -->
-                        <a href="">Read more</a> <!-- button or link label -->
+                        <a href="#" class="button">View Project</a> <!-- button -->
                     </div> <!-- end second column: for text -->
                 </div> <!-- end row that holds (2) columns for project two-->
                 <!-- end project two: homeboost-->
@@ -91,10 +99,10 @@
         <div> <!-- container/wrapper -->
             <h2>Get in Touch</h2>
             <p> <!-- open paragraph: contact information -->
-                Do you like my work and want to discuss opportunities? Please get in touch. Call or text: <a href="tel:3026503288">(302)650-3288)</a> Prefer sending an email?
+                Do you like my work and want to discuss opportunities? Please get in touch.<br>Call or text: <a href="tel:3026503288">(302) 650-3288</a> <br>or
             </p> <!-- close paragraph: contact information -->
             <div> <!-- open email link container -->
-                <a href="mailto:rachelrad.designs@gmail.com">Email me</a>
+                <a href="mailto:rachelrad.designs@gmail.com" class="ghost_button">Send Me an Email</a> <!-- ghost button -->
             </div> <!-- close email link container -->
             <div> <!-- open social media container -->
                 <!-- open linkedin section -->
