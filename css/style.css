@@ -1,11 +1,16 @@
 /*
-Colors used:
-Background Color (Whisper): #ebebeb;
-Background Color 2 Containers (White): #fefefe;
-Primary Color (Night): #141414;
-Secondary Color (Dim Gray): #737373;
-Accent Color -1 (Dark Cyan): #1f8f89;
-Accent Color -2 (Harvest Gold): #e1982b or rgb(175,131,134);
+Colors Used:
+Background (main): #f6f6f6;
+Background-2 (navigation/hero): #fefefe;
+Primary Color (h1 h2): #141414;
+Primary Varitation-1 (h3): ##3d3d3d
+Primary Varitation-2 (h4): #525252
+Primary Varitation-3 (body): ##525252
+Primary Variation-4 (divider line): #e0e0e0
+Accent Color-1 (links): #1f8f89;
+Accent Color-1 Variation (link hover): #23b9b0
+Accent Color-2 (buttons): #e99d2b
+Accent Color-2 Variation (link hover): #f5ac3e
 */
 
 /*
@@ -13,19 +18,25 @@ Typography used:
 Font Family; DM Sans 
 */
 
+/* GLOBAL ELEMENTS */
+* {
+    box-sizing: border-box;
+  }
+
+
 /* Typography*/
 body {
-    background-color: #F4F4F4;
+    background-color: #f6f6f6;
     font-family: 'DM Sans', sans-serif;
     font-size: 16px; /* Sets the font size to 16px */
     font-weight: 400; /* Sets the font weight to 400 */
     line-height: 1.5; /* Sets the line-height to 1.5 * the font-size */
-    color: #474747;
+    color: #666666;
 }
 
 h1 {
     font-family: 'DM Sans', sans-serif;
-    font-size: 2.75em;
+    font-size: 2.5em;
     font-weight: 800;
     line-height: 1.0;
     color:#141414
@@ -42,13 +53,13 @@ h3 {
     font-size: 1.75em;
     font-weight: 700;
     line-height: 1.0;
-    color: #292929;
+    color: #3D3D3D;
 }
 h4 {
     font-size: 1.25em;
     font-weight: 500;
     line-height: 1.0;
-    color:#333333;
+    color:#525252;
 }
 
 
@@ -72,31 +83,33 @@ a:hover {
 /* Buttons*/
 .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #e1982b;
+    background-color: #e99d2b;
     color: #fefefe; /* needed to override the default link color */
     font-weight: 700;
-    padding: 20px 24px;
+    padding: 16px 20px;
     border-radius: 8px;
     text-align: center;
     transition: 0.2s opacity;
+    margin-top: 8px;
   }
 
   .button:hover {
-    background-color: #F5AC3E;
+    background-color: #f5ac3e;
     color: #fefefe;
   }
 
   .ghost_button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    color: #e1982b; /* needed to override the default link color */
+    color: #e99d2b; /* needed to override the default link color */
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    padding: 24px;
   }
 
   .ghost_button:hover {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    color: #e1982b; /* needed to override the default link color */
+    color: #f5ac3e; /* needed to override the default link color */
     text-decoration: underline;
   }
 
@@ -105,56 +118,262 @@ a:hover {
     width: 100%;
   }
 
+  * {
+    box-sizing: border-box;
+  }
+
+
+  /* Layout styling */
+  .container {
+    padding: 0 15px;
+  }
+
+  .row {
+    margin: 28px 0; /* 25px top and bottom, 0 left and right */
+    padding-bottom: 28px; 
+    border-bottom: 1px 
+    solid #e0e0e0; 
+    }
+
+  
+  .row-last {
+    margin: 28px 0 0 0; /* 25px top and bottom, 0 left and right */
+    padding-bottom: 44px; 
+}
+
+
+ /* Header & Nav section */
+ header {
+    background-color: #fefefe;
+    padding: 10px 0; /* Adds a 10px inner spacing, with none L and R */
+    margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+    text-align: center;
+	box-shadow: 0 2px 18px rgba(89, 88, 89, 0.2); /* adds drop shadow */
+    position: fixed; /* adds scroll */
+    width: 100%; /* expands to full screen widths */
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+}
+
+.logo {
+    max-width: 250px;
+}
+  
+nav > ul { /* removing bullet points in unordered list */
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav > ul > li { /* moving list items in unordered list to one line */
+    display: inline-block;
+  }
+
+nav > ul > li > a { /* links that are list elements within unordered list */
+    padding: 0 16px;
+}
+
+/* Footer & Contact Section */
+
+#contact {
+    text-align: center;
+    padding: 16px 0 16px 0;
+    background-color: #fefefe;
+}
+
+#contact .container {
+    margin: 50px, 0;
+}
+
+.phone {
+    padding-top: 24px;
+}
+.socials{
+    display: inline-block;
+    align-items: center;
+    padding: 16px;
+
+}
+
+.svg-container{
+    width: 72px; /* (40px + 16px + 16px) */
+    height: 72px; /* (40px + 16px + 16px) */
+    display: inline-block; /* aligns icosn in a row */
+}
+
+.svg-logo {
+    height: 40px;
+    width: 40px;
+}
+
+.svg-logo:hover{
+    color: #23B9B0;
+}
+
+
+/* Main section */
+main {
+    padding-top: 137px;
+    background-color:#f6f6f6;
+  }
+
+
 /* ---- INDEX/HOME ---- */
 
-    /* Header & Nav section */
-    header {
-        background-color: #fefefe;
-        padding: 10px; /* Adds a 10px inner spacing to all sides */
-        margin: margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
-        border-bottom: 3px solid #4a4a4a;
-      }
-
     /* Hero Section */
+    #hero {
+        background-color: #fefefe; /* makes background color same as header */
+        padding: 20px 0; /* adds 20px to top and bottom */
+        display: inline-block; /* margins of elements will only affect elements in this section */
+        width: 100%; /* will expand and shrink to full browser width */
+        text-align: center;
+    }
+
+    #hero h1 {
+        font-family: 'Wix Madefor Display', sans-serif;
+        font-weight: 800;
+        font-size: 3.4em;
+        color: #e99d2b;
+        margin: 20px 0; /* default margins changed to top 20 px bottom 16 px */
+    }
+
+    #hero h2{
+        margin: 24px;
+    }
+    
+    #hero p{
+        margin-top: 0;
+        color: #858585;
+    }
+
+    #hero p.special-paragraph {
+        padding-top: 32px;
+        color: #474747;
+    }
 
 
     /* Projects Section */
+    
+    #projects h2 {
+        text-align: center;
+        color: #3d3d3d;
+        padding: 8px 0;
+    }
 
-
-    /* Footer & Contact Section */
-
-
+    #projects h3 {
+        margin: 24px 0 0px 0;
+    }
 
 
 /* ---- ABOUT ---- */
+    h1 {
+        font-family: 'Wix Madefor Display', sans-serif;
+        font-weight: 800;
+        font-size: 3.4em;
+        color: #e99d2b;
+        margin: 20px 24; /* default margins changed to top 24 px bottom 24 px */
+        text-align: center;
+    }
 
-    /* Header & Nav section */
-
-
-    /* Hero Section */
-
+    .about-img {
+        display: block;
+        border-radius: 80px;
+    }
 
     /* My Story */
+    #about h2 {
+        text-align: center;
+        color: #3d3d3d;
+        padding: 8px 0;
+    }
 
+    #about h4{
+        margin: 32px 0 12px 0;
+    }
 
     /* Skills & Tools */
+    #about h3{
+        margin: 32px 0 12px 0;
+    }
+    #about ul{
+        padding-left: 24px;
+    }
+
+    #about ul >li {
+        padding: 4px 0;
+    }
 
 
-    /* Footer & Contact Section */
 
 
 /* ---- PORTFOLIO PROJECTS ---- */
 
-    /* Header & Nav section */
+
+    /* Intro Section */
+    #intro {
+        text-align: left;
+        background-color: #fefefe; /* makes background color same as header */
+        padding: 20px 0; /* adds 20px to top and bottom */
+        display: inline-block; /* margins of elements will only affect elements in this section */
+        width: 100%; /* will expand and shrink to full browser width */
+        text-align: center;
+    }
+
+    #intro h1 {
+        font-family: 'Wix Madefor Display', sans-serif;
+        font-weight: 800;
+        font-size: 3.4em;
+        color: #e99d2b;
+        margin: 20px 24; /* default margins changed to top 24 px bottom 24 px */
+    }
+    
+    #intro p {
+        text-align: left;
+        color: #858585;
+    }
+
+    #intro .preview {
+        margin: 32px 0 24px 0;
+    }
 
 
-    /* Hero Section */
+    /* Process Section*/
+    #process .row-context { 
+        padding-bottom: 25px; 
+        border-bottom: 1px solid #e0e0e0; 
+    }
 
+    #process .row-user-flow { 
+        padding-bottom: 25px; 
+        border-bottom: 1px solid #e0e0e0; 
+    }
 
-    /* My Story */
+    #process .row-wireframes { 
+        padding-bottom: 25px; 
+        border-bottom: 1px solid #e0e0e0; 
+    }
 
+    #process .row-testing { 
+        padding-bottom: 25px; 
+        border-bottom: 1px solid #e0e0e0; 
+    }
 
-    /* Skills & Tools */
+    #process .row-branding { 
+        padding-bottom: 25px; 
+        border-bottom: 1px solid #e0e0e0; 
+    }
+    
+    #process h2 {
+        text-align: center;
+    }
+
+    #process h4 {
+        text-align: center;
+    }
+
+ 
+    
 
     
-    /* Footer & Contact Section */

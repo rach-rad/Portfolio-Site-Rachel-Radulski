@@ -8,50 +8,45 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Wix+Madefor+Display:wght@700;800&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Wix+Madefor+Display:wght@800&display=swap" rel="stylesheet">    
     <title>Rachel Radulski's Portfolio</title>
 </head>
 <body>
     <!-- For the header -->
     <header>
         <!-- For the navigation -->
-        <div>  
+        <div class="container">  
             <picture> <!-- open logo image-->
                 <source srcset="img/general/logo@2x.png" media="(max-width:767px)">
-                <img src="img/general/logo@2x.png" alt="logo">
+                <img class="logo" src="img/general/logo@2x.png" alt="logo">
               </picture> <!-- close logo image-->
             <nav>
-                <ul> <!-- open navigation links -->
+                <ul class="navigation"> <!-- open navigation links -->
                   <li><a href="index.html" class="nav_link">Work</a></li>
                   <li><a href="about.html" class="nav_link">About</a></li>
                   <li><a href="#contact" class="nav_link">Contact</a></li>
                 </ul> <!-- close navigation links -->
-              </nav> 
+            </nav> 
         </div>
     </header>
    
     <!-- Start main section -->
     <main> 
         <!-- For the hero section -->
-         <div> <!-- whole section block-->
-            <div> <!-- container/wrapper -->
-                <h3>Hi, I'm Rachel Radulski</h3>
-                <h4>a dedicated UI/UX designer with a passion for creating intuitive and visually captivating user experiences.</h4>
-                <p>Browse through my portfolio to discover my latest design projects.</p>
+         <div id="hero"> <!-- whole section block-->
+            <div class="container"> <!-- container/wrapper -->
+                <h1>Hello!</h1>
+                <h2>I'm Rachel</h2>
+                <p>A dedicated UI/UX designer with a passion for creating intuitive and visually captivating user experiences.</p>  
             </div> <!-- container/wrapper -->
         </div> <!-- whole section block-->
 
     <!-- For your work projects -->
-        <div> <!-- whole section block-->
-            <div> <!-- container/wrapper -->
-                <h1>My Work</h1>
+        <div id="projects" > <!-- whole section block-->
+            <div class="container"> <!-- container/wrapper -->
+                <h2>My Projects</h2>
                 <!-- open project one: modish nest -->
-                <div> <!-- open row that holds (2) columns for project one -->
+                <div class="row"> <!-- open row that holds (2) columns for project one -->
                     <div> <!-- open first column: for image -->
                         <picture> <!-- open modish nest image-->
                             <source srcset="img/home/preview_modish_nest@1x.jpg" media="(max-width:767px)">
@@ -71,7 +66,7 @@
                 </div> <!-- end row that holds (2) columns for project one -->
                 <!-- end project one: modish nest-->
                 <!-- open project two: homeboost -->
-                <div> <!-- open row that holds (2) columns for project two -->
+                <div class="row"> <!-- open row that holds (2) columns for project two -->
                     <div> <!-- open first column: for image -->
                         <picture> <!-- open homeboost image-->
                             <source srcset="img/home/preview_homeboost@1x.jpg" media="(max-width:767px)">
@@ -90,43 +85,59 @@
                     </div> <!-- end second column: for text -->
                 </div> <!-- end row that holds (2) columns for project two-->
                 <!-- end project two: homeboost-->
+                <!-- open project three: localite -->
+                <div class="row-last"> <!-- open row that holds (2) columns for project three -->
+                    <div> <!-- open first column: for image -->
+                        <picture> <!-- open homeboost image-->
+                            <source srcset="img/home/preview_localite@1x.jpg" media="(max-width:767px)">
+                            <img src="img/home/preview_localite@1x.jpg" alt="Localite">
+                        </picture> <!-- close homeboost image-->
+                    </div> <!-- end first column: for image -->
+                    <div> <!-- open second column: for text -->
+                        <h3>Localite</h3> <!-- heading for the project three -->
+                        <p> <!-- open paragraph: project three intro -->
+                            HomeBoost is a UX/UI design project for a native home automation app for Android and iOS platforms.
+                        </p> <!-- end paragraph: project three intro -->
+                        <p> <!-- open paragraph: project three skills -->
+                            This project showcases skills in applying iOS design guidelines and Material Design principles to create a cohesive design across both platforms. Additionally, it involves incorporating existing mobile design patterns, conducting app analysis, and implementing native sound effects and haptics. This app is complemented by a prototype that accurately represents the final user interface.
+                        </p> <!-- end paragraph: project three skills -->
+                        <a href="#" class="button">View Project</a> <!-- button -->
+                    </div> <!-- end second column: for text -->
+                </div> <!-- end row that holds (2) columns for project two-->
+                <!-- end project three: localite-->
             </div> <!-- container/wrapper -->
         </div> <!-- whole section block-->
     </main> <!-- End main section -->
    
     <!-- For the footer -->
-    <footer> <!-- whole section block-->
-        <div> <!-- container/wrapper -->
+    <footer id="contact"> <!-- whole section block-->
+        <div class="container"> <!-- container/wrapper -->
             <h2>Get in Touch</h2>
-            <p> <!-- open paragraph: contact information -->
-                Do you like my work and want to discuss opportunities? Please get in touch.<br>Call or text: <a href="tel:3026503288">(302) 650-3288</a> <br>or
-            </p> <!-- close paragraph: contact information -->
+            <p> Do you like my work and want to discuss opportunities? </p>
+            <p>Please get in touch.</p>
+            <p class="phone">Call or text: <a href="tel:3026503288">(302) 650-3288</a></p>
             <div> <!-- open email link container -->
                 <a href="mailto:rachelrad.designs@gmail.com" class="ghost_button">Send Me an Email</a> <!-- ghost button -->
             </div> <!-- close email link container -->
-            <div> <!-- open social media container -->
+            <div class="socials"> <!-- open social media container -->
                 <!-- open linkedin section -->
-                <a href="https://www.linkedin.com/in/rachelradulski" target="_blank"> <!-- open linkedin link -->
-                <!-- close linkedin link-->
-                    <!-- open linkedin icon -->
-                    <img src="img/general/linkedin.svg" alt="LinkedIn Icon"> <!-- close linkedin icon -->
+                <a href="https://www.linkedin.com/in/rachelradulski" target="_blank">
+                    <div class="svg-container">
+                        <img class="svg-logo" src="img/general/linkedin.svg" alt="LinkedIn Icon"> 
+                    </div>
                 </a> <!-- close linkedin section -->
-                <!-- open behance section -->
-                <a href="https://www.behance.net/rachelradulski" target="_blank"> <!-- open behance link -->
-                <!-- close behance link -->
-                    <!-- open behance icon -->
-                    <img src="img/general/behance.svg" alt="Behance Icon"> <!-- close behance icon -->
-                </a> <!-- close behance section -->
-                <!-- open dribble section -->
-                <a href="https://dribbble.com/rachel_rad"> <!-- open dribble link-->
-                <!-- close dribble link -->
-                    <!-- open dribble icon -->
-                    <img src="img/general/dribble.svg" alt="Behance Icon"> <!-- close dribble icon -->
+                 <!-- open dribble section -->
+                 <a href="https://dribbble.com/rachel_rad">
+                    <div class="svg-container">
+                        <img class="svg-logo" src="img/general/dribble.svg" alt="Behance Icon"> 
+                    </div>
                 </a> <!-- close dribble section -->
-                <!-- open fourth socal section-->
-                <a href="ANOTHER-SOCIAL-LINK">
-                    <img src="http://viaplaceholder.com/32x32" alt="">
-                </a> <!-- close fourth socal section-->
+                <!-- open behance section -->
+                <a href="https://www.behance.net/rachelradulski" target="_blank"> 
+                    <div class="svg-container">
+                        <img class="svg-logo" src="img/general/behance.svg" alt="Behance Icon"> <!-- close behance icon -->
+                    </div>
+                </a> <!-- close behance section -->
             </div> <!-- close social media container -->
             <p>Copyright Rachel Radulski 2023</p>
         </div> <!-- container/wrapper -->
