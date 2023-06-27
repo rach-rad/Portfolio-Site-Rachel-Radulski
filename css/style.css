@@ -32,6 +32,7 @@ body {
     font-weight: 400; /* Sets the font weight to 400 */
     line-height: 1.5; /* Sets the line-height to 1.5 * the font-size */
     color: #666666;
+    width: 100%;
 }
 
 h1 {
@@ -68,49 +69,89 @@ a {
     color: #1F8F89;
     font-weight: 700;
     text-decoration: none; /* No underlining */
+    transition: .4s;
+    opacity: 1;
 }
 
-a:hover {
+a:hover, a:focus {
     color: #23B9B0; /* change the link text color to lighter teal on hover */
     text-decoration: none; /* No underlining */
 }
 
+a:visited, a:active {
+  color: #1F8F89;
+}
+
 .nav_link {
     text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 
 /* Buttons*/
-.button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+.button, .button:visited {
+    display: inline-block;              /* since the <a> tag is inline by default, we need to change this to inline-block */
     background-color: #e99d2b;
-    color: #fefefe; /* needed to override the default link color */
-    font-weight: 700;
-    padding: 16px 20px;
-    border-radius: 8px;
-    text-align: center;
-    transition: 0.2s opacity;
-    margin-top: 8px;
-  }
-
-  .button:hover {
-    background-color: #f5ac3e;
-    color: #fefefe;
-  }
-
-  .ghost_button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    color: #e99d2b; /* needed to override the default link color */
-    font-weight: 700;
-    text-align: center;
+    border: 2px solid #e99d2b;
+    color: #fefefe;                  /* needed to override the default link color */
+    font-size: 14px;
+    text-decoration: none; 
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    padding: 24px;
+    border-radius: 8px;            
+    padding: 16px 20px;
+    margin-top: 8px;
+    opacity: 1;
+    transition-duration: 0.4s;
+  }
+  
+  .button:after {
+    background-color: #e99d2b;
+    border: 2px solid #e99d2b;
+    color: #e99d2b;
+  }
+  
+  .button:hover {
+    background-color: transparent;
+    border: 2px solid #e99d2b;
+    color: #e99d2b;
+  }
+  
+  .button:hover:after {
+    width: 110%;
+  }
+  
+
+  .ghost_button, .ghost_button:visited {
+    display: inline-block;              
+    background-color: transparent;
+    border: 1px solid #e99d2b;
+    color: #e99d2b;                  
+    font-size: 14px;
+    text-decoration: none; 
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-radius: 8px;            
+    padding: 12px 16px;
+    margin: 8px 16px 20px 16px;
+    opacity: 1;
+    transition-duration: 0.4s;
+  }
+
+  .button:after {
+    background-color: #f9dcbf;
+    color: #e99d2b;
+    border: transparent;
   }
 
   .ghost_button:hover {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    color: #f5ac3e; /* needed to override the default link color */
-    text-decoration: underline;
+    background-color: #f9dcbf;
+    color: #e68b04;
+    border: transparent;
+  }
+
+  .ghost-button:hover:after {
+    width: 110%;
   }
 
   /* Images */
@@ -165,17 +206,23 @@ nav {
 nav > ul { /* removing bullet points in unordered list */
     list-style-type: none;
     padding: 0;
-  }
+}
 
-  nav > ul > li { /* moving list items in unordered list to one line */
+nav > ul > li { /* moving list items in unordered list to one line */
     display: inline-block;
-  }
+    width: auto;
+    text-align: center;
+}
 
 nav > ul > li > a { /* links that are list elements within unordered list */
-    padding: 0 16px;
+    padding: 0 12px;
 }
 
 /* Footer & Contact Section */
+
+footer{
+    width: 100%;
+}
 
 #contact {
     text-align: center;
@@ -208,9 +255,10 @@ nav > ul > li > a { /* links that are list elements within unordered list */
     width: 40px;
 }
 
-.svg-logo:hover{
+.svg-logo img:hover {
     color: #23B9B0;
 }
+
 
 
 /* Main section */
@@ -236,10 +284,11 @@ main {
         font-weight: 800;
         font-size: 3.4em;
         color: #e99d2b;
-        margin: 20px 0; /* default margins changed to top 20 px bottom 16 px */
+        margin: 20px 0; /* default margins changed to top 20 px bottom 20 px */
     }
 
     #hero h2{
+        font-weight: 500;
         margin: 24px;
     }
     
@@ -271,16 +320,21 @@ main {
     h1 {
         font-family: 'Wix Madefor Display', sans-serif;
         font-weight: 800;
-        font-size: 3.4em;
+        font-size: 3.9em;
         color: #e99d2b;
         margin: 20px 24; /* default margins changed to top 24 px bottom 24 px */
         text-align: center;
+        letter-spacing: 0.05em;
     }
 
     .about-img {
         display: block;
-        border-radius: 80px;
-    }
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        max-height: 50%;
+        border-radius: 16px;
+      }
 
     /* My Story */
     #about h2 {
@@ -305,8 +359,20 @@ main {
         padding: 4px 0;
     }
 
+    .resume {
+        text-align: center;
+    }
+
+    #about .row-last{
+        padding-bottom: 22px;
+    }
+
+    #about ul{
+        margin-bottom: 0px;
+    }
 
 
+   
 
 /* ---- PORTFOLIO PROJECTS ---- */
 
@@ -373,7 +439,280 @@ main {
         text-align: center;
     }
 
- 
-    
 
-    
+
+
+/* ANIMATION PROJECT 1.8 */
+    .berlin-illustration{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    @keyframes color-change {
+        0% {fill: #edc655;}
+        50% {fill: #fcffad;}
+        100% {fill: #f76414;}
+    }
+
+    .sun {
+        animation-duration: 4s;
+        animation-name: color-change;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+      }
+
+    @keyframes cloud-move {
+    from {
+        transform: translate(0,50px);
+    }
+    to {
+        transform: translate(200px,50px);
+    }
+    }
+
+    .cloud-front {
+        animation-duration: 6s;
+        animation-name: cloud-move;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+    }
+
+    @keyframes cloud-move-reverse {
+        from {
+            transform: translate(446px,48px);
+        }
+        to {
+            transform: translate(100px, 48px);
+        }
+      }
+
+      .cloud-back {
+        animation: 16s cloud-move-reverse infinite alternate linear;
+      }
+
+/* MEDIA QUERIES */
+
+ /* ==============================
+    Medium devices (640px and larger)
+    ================================= */
+    @media only screen and (min-width: 640px) {
+        header {
+            text-align: unset;          /* removes text align: center */
+            padding: 20px 0 13px;       /* added padding to align with logo */
+        }
+
+        nav {
+            width: auto;                /* changes width from full screen width to only as wide as its content and aligned with the logo. */
+            float: right;               /*floats to the right of the logo */
+            margin-top: 2px;            /* added top margin to align with logo */
+        }
+
+        body {
+            font-size: 16px;            /* changes changes font size from 16px to 18px */
+        }
+
+        main {
+            padding-top: 94px;          /* changes top padding to eliminate gap between header and hero */
+        }
+
+        .col-md-6 {                     /* each column will take up 50% of the original width 100% aka 6 column grid vs 12 */
+            width: 50%;
+        }
+
+        .col-md-12 {
+            width: 100%;
+        }
+
+        [class*="col-"] {               /* class attribute selcector */
+            float: left;     
+            padding: 0 20px;            /* floats columns with class col- to left */
+        }
+
+        .row::after {                   /* clears the flow to prevent overlapping elements */
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        #projects .row-last .col-md-6 { /* adds padding to the bottom so button does not lay on the footer  */
+            padding-bottom: 28px;
+        }
+
+        #about .h2 { 
+            margin-top: 0;              /* removes extra space between h1 and skills and tools columns */
+        }
+
+        #about .row-last {
+            padding-bottom: 0;          /* removes extra space between h1 and skills and tools columns */
+        }
+
+        .about-img {
+            text-align: center;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        #about .row .row-last {
+            padding: 0 20px 24px 20px;
+        }
+
+        .svg-logo {
+            height: 44px;
+            width: 44px;
+        }
+
+        .svg-container {
+            width: 84px;
+            height: 84px;
+        }
+
+        #about .col-lg-7{
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-bottom: 44px;
+        }
+        
+        #about .row-last{
+            margin-top: 0;
+        }
+
+        .resume{
+            padding-top: 12px;
+        }
+
+        #about .col-md-6{
+            padding-bottom: 44px;
+        }
+
+        #about .col-md-6 h4{
+            margin-top: 0;
+        }
+
+        #intro .container, #process .container{
+            margin: 20px;
+        }
+        
+        #process h4{
+            margin-bottom: 12px;
+        }
+
+        .mobile-wireframes img{
+            max-width: 20%;
+            padding: 8px;
+
+        }
+
+        .mobile-wireframes, .desktop-wireframes, .midfi-wireframes {
+            text-align: center;
+        }
+
+        .desktop-wireframes img {
+            max-width: 40%;
+            padding: 8px;
+        }
+
+        .midfi-wireframes img, .test-home{
+            max-width: 20%;
+            padding: 8px;
+        }
+
+        .midfi-wireframes .midfi-desktop {
+            max-width: 55%;
+        }
+
+    }
+
+    /* ==============================
+    Large devices (1024px or larger)
+    ================================= */
+    @media only screen and (min-width: 1024px) {
+        
+        .col-lg-7 {
+            width: 58.33%;              /* 7 grid coloumn for index project image - splits page around 60/40 */
+        }
+        
+        .col-lg-5 {
+            width: 41.66%;              /* 5 gird column for heading, paragraph, and button - splits page around 60/40 */
+            margin: 32px 0;              
+        }
+
+        .col-lg-12 {
+            width: 100%;
+        }
+        
+        .row-large{
+            width: 100%;
+        }
+        .container {
+            max-width: 1200px;          /* restricts content to extending past 1200px */
+            margin-left: auto;          /* centers content on the screen */
+            margin-right: auto;         /* centers content on the screen */
+          }
+
+        #hero {
+            padding: 44px;
+        }
+
+        #projects h2 {
+            margin: 44px 0;
+        }
+
+        #projects h3 {
+            margin-top: 0;
+        }
+
+        .row {
+            margin: 44px 0;
+            padding-bottom: 44px;
+        }
+
+        .about-img {
+            text-align: center;
+            max-width: 20%;
+            max-height: 20%;
+        }
+
+        #about .row .row-last{
+            padding: 0 24px 44px 24px;
+        }
+
+        .resume{
+            padding-top: 32px;
+            text-align: left;
+        }
+        
+        #about .skills{
+            margin-top: 0px;
+        }
+     
+        #about h2{
+            text-align: left;
+        }
+        
+        #about .col-lg-7 {
+            padding-left: 40px;
+            padding-right: 44px;
+            margin-top: 32px;
+        }
+
+        #about .row{
+            border-bottom: 0;
+        }
+
+        #about ul {
+            margin-bottom: 0;
+        }
+
+        .svg-logo {
+            height: 52px;
+            width: 52px;
+        }
+
+        .svg-container {
+            width: 92px;
+            height: 92px;
+        }
+    }
