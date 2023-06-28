@@ -605,7 +605,7 @@ main {
 
         }
 
-        .mobile-wireframes, .desktop-wireframes, .midfi-wireframes {
+        .mobile-wireframes, .desktop-wireframes, .midfi-wireframes, .test-home, .test-c, .test-cd, .final-designs {
             text-align: center;
         }
 
@@ -614,7 +614,7 @@ main {
             padding: 8px;
         }
 
-        .midfi-wireframes img, .test-home{
+        .midfi-wireframes img, .test-home img, .test-c img, .test-cd img, .results img {
             max-width: 20%;
             padding: 8px;
         }
@@ -623,7 +623,29 @@ main {
             max-width: 55%;
         }
 
+        .imagery{
+            text-align: center;
+        }
+
+        .imagery img {
+            max-width: 30%;
+            padding: 8px;
+
+        }
+
+        .final-designs img {
+            max-width: 30%;
+            padding: 8px;
+        }
+        
+        .final-designs .final-desktop {
+            max-width: 100%;
+        }
+
     }
+
+
+    
 
     /* ==============================
     Large devices (1024px or larger)
