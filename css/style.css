@@ -3,7 +3,7 @@ Colors Used:
 Background (main): #f6f6f6;
 Background-2 (navigation/hero): #fefefe;
 Primary Color (h1 h2): #141414;
-Primary Varitation-1 (h3): ##3d3d3d
+Primary Varitation-1 (h3): #3d3d3d
 Primary Varitation-2 (h4): #525252
 Primary Varitation-3 (body): ##525252
 Primary Variation-4 (divider line): #e0e0e0
@@ -78,9 +78,6 @@ a:hover, a:focus {
     text-decoration: none; /* No underlining */
 }
 
-a:visited, a:active {
-  color: #1F8F89;
-}
 
 .nav_link {
     text-transform: uppercase;
@@ -255,8 +252,8 @@ footer{
     width: 40px;
 }
 
-.svg-logo img:hover {
-    color: #23B9B0;
+.svg-logo:hover {
+    opacity: .85;
 }
 
 
@@ -283,7 +280,7 @@ main {
         font-family: 'Wix Madefor Display', sans-serif;
         font-weight: 800;
         font-size: 3.4em;
-        color: #e99d2b;
+        color: #23B9B0;
         margin: 20px 0; /* default margins changed to top 20 px bottom 20 px */
     }
 
@@ -317,11 +314,17 @@ main {
 
 
 /* ---- ABOUT ---- */
+
+    hero .container{
+        display: flex;
+        flex-direction: column;
+    }
+
     h1 {
         font-family: 'Wix Madefor Display', sans-serif;
         font-weight: 800;
         font-size: 3.9em;
-        color: #e99d2b;
+        color: #23B9B0;
         margin: 20px 24; /* default margins changed to top 24 px bottom 24 px */
         text-align: center;
         letter-spacing: 0.05em;
@@ -335,6 +338,12 @@ main {
         max-height: 50%;
         border-radius: 16px;
       }
+
+    #hero .about-intro {
+        order: 3;
+        margin-top: 20px;
+        text-align: center;
+    }
 
     /* My Story */
     #about h2 {
@@ -391,7 +400,7 @@ main {
         font-family: 'Wix Madefor Display', sans-serif;
         font-weight: 800;
         font-size: 3.4em;
-        color: #e99d2b;
+        color: #23B9B0;
         margin: 20px 24; /* default margins changed to top 24 px bottom 24 px */
     }
     
@@ -441,57 +450,89 @@ main {
 
 
 
+/* ANIMATION PROJECT LANDSCAPE */
 
-/* ANIMATION PROJECT 1.8 */
-    .berlin-illustration{
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-    }
+.landscape {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
 
-    @keyframes color-change {
-        0% {fill: #edc655;}
-        50% {fill: #fcffad;}
-        100% {fill: #f76414;}
-    }
+@keyframes mountain-color-change {
+    0% {fill: #003c44;}
+    50% {fill: #006876;}
+    100% {fill: #00a3d0;}
+}
 
-    .sun {
-        animation-duration: 4s;
-        animation-name: color-change;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-timing-function: linear;
-      }
+.mountain {
+    animation-duration: 4s;
+    animation-name: mountain-color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
 
-    @keyframes cloud-move {
+@keyframes bird-move {
     from {
-        transform: translate(0,50px);
+        transform: translate(10px,5px);
     }
     to {
-        transform: translate(200px,50px);
+        transform: translate(400px,-100px);
     }
+}
+
+.bird {
+    animation-duration: 7s;
+    animation-name: bird-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes land-color-change {
+    0% {fill: #154a00;}
+    50% {fill: #0a7500;}
+    100% {fill: #1aad00;}
+}
+
+.land {
+    animation-duration: 4s;
+    animation-name: land-color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+  .sunset {
+    animation: moveUpDown 8s infinite, sun-color-change 4s infinite alternate linear;
+  }
+  
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
     }
-
-    .cloud-front {
-        animation-duration: 6s;
-        animation-name: cloud-move;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-timing-function: linear;
+    50% {
+      transform: translateY(-100px);
     }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes sun-color-change {
+    0% {
+      fill: #f76014;
+    }
+    50% {
+      fill: #f3a74a;
+    }
+    100% {
+      fill: #f0d000;
+    }
+  }
 
-    @keyframes cloud-move-reverse {
-        from {
-            transform: translate(446px,48px);
-        }
-        to {
-            transform: translate(100px, 48px);
-        }
-      }
+  
 
-      .cloud-back {
-        animation: 16s cloud-move-reverse infinite alternate linear;
-      }
 
 /* MEDIA QUERIES */
 
@@ -518,6 +559,11 @@ main {
             padding-top: 94px;          /* changes top padding to eliminate gap between header and hero */
         }
 
+        [class*="col-"] {               /* class attribute selcector */
+            float: left;     
+            padding: 0 20px;            /* floats columns with class col- to left */
+        }
+
         .col-md-6 {                     /* each column will take up 50% of the original width 100% aka 6 column grid vs 12 */
             width: 50%;
         }
@@ -526,11 +572,31 @@ main {
             width: 100%;
         }
 
-        [class*="col-"] {               /* class attribute selcector */
-            float: left;     
-            padding: 0 20px;            /* floats columns with class col- to left */
+        .col-5 {
+            width: 20%;
+            padding: 12px;
+            float: left;
+            text-align: center;
+            margin-bottom: 44px;
         }
 
+        .col-3 {
+            width: 33.3%;
+            height: auto;
+            padding: 44px;
+            float: left;
+            margin-bottom: 44px;
+        }
+
+       .col-md-2{
+            width: 50%;
+            text-align: center;
+            padding-left: 0;
+            margin: 0;
+            padding-right: 56px;
+        }
+
+        
         .row::after {                   /* clears the flow to prevent overlapping elements */
             content: "";
             clear: both;
@@ -540,6 +606,7 @@ main {
         #projects .row-last .col-md-6 { /* adds padding to the bottom so button does not lay on the footer  */
             padding-bottom: 28px;
         }
+        
 
         #about .h2 { 
             margin-top: 0;              /* removes extra space between h1 and skills and tools columns */
@@ -591,12 +658,46 @@ main {
             margin-top: 0;
         }
 
+        .c-i {
+            height: 130px;
+        }
+
+        .t-i{
+            height: 400px;
+        }
+
+        .example {
+            height: auto;
+            width: auto;
+        }
+
+        .imagery .col-3{
+            margin-bottom: 24px;
+            padding: 8px;
+        }
+
+       
+
         #intro .container, #process .container{
             margin: 20px;
         }
         
+        #process ul{
+            padding-left: 24px;
+            padding-bottom: 16px;
+        }
+
         #process h4{
-            margin-bottom: 12px;
+            margin-bottom: 24px;
+            text-align: left;
+        }
+
+
+        #process h5 {
+            font-size: 14px;
+            font-weight: 800;
+            margin-top: 0;
+            margin-bottom: 16px;
         }
 
         .mobile-wireframes img{
@@ -614,7 +715,11 @@ main {
             padding: 8px;
         }
 
-        .midfi-wireframes img, .test-home img, .test-c img, .test-cd img, .results img {
+        .midfi-wireframes h3 {
+            text-align: left;
+        }
+
+        .midfi-wireframes img, .test-home img, .test-c img, .test-cd img {
             max-width: 20%;
             padding: 8px;
         }
@@ -625,13 +730,9 @@ main {
 
         .imagery{
             text-align: center;
+            height: auto;
         }
 
-        .imagery img {
-            max-width: 30%;
-            padding: 8px;
-
-        }
 
         .final-designs img {
             max-width: 30%;
@@ -642,6 +743,34 @@ main {
             max-width: 100%;
         }
 
+        .test-home{
+            width: auto;
+        }
+
+        .final-designs h3{
+            text-align: left;
+        }
+
+        about-content {
+            display: flex;
+            flex-direction: column;
+          }
+        
+          .text-wrapper {
+            order: 1;
+            margin-right: 1;
+            margin-left: 1;
+          }
+          .wrap {
+            order: 2;
+          }
+        .logo {
+            height: auto;
+        }
+
+        .imagery {
+            margin-bottom: 44px;
+        }
     }
 
 
@@ -678,6 +807,7 @@ main {
             padding: 44px;
         }
 
+
         #projects h2 {
             margin: 44px 0;
         }
@@ -691,11 +821,6 @@ main {
             padding-bottom: 44px;
         }
 
-        .about-img {
-            text-align: center;
-            max-width: 20%;
-            max-height: 20%;
-        }
 
         #about .row .row-last{
             padding: 0 24px 44px 24px;
@@ -737,4 +862,52 @@ main {
             width: 92px;
             height: 92px;
         }
+      
+        
+        .about-img {
+            width: auto;
+            max-width: 25%;
+            height: auto;
+            float: right;
+            margin-top: -100px;
+            margin-left: 32px;
+            margin-bottom: 20px;
+          }
+        
+          .about-content {
+            display: flex;
+            align-items: flex-start;
+          }
+        
+          .text-wrapper {
+            flex-grow: 1;
+            margin-right: 0;
+          }
+        
+          .text-wrapper h1,
+          .text-wrapper .about-intro {
+            text-align: left;
+            margin-bottom: 0;
+          }
+        
+          #hero .about-intro {
+            text-align: left;
+          }
+
+        
+
+        
     }
+        
+        
+    
+        
+        
+            
+        
+   
+
+    
+
+   
+        
