@@ -205,7 +205,7 @@ a:hover, a:focus {
  /* Header & Nav section */
  header {
     background-color: #fefefe;
-    padding: 10px 0; /* Adds a 10px inner spacing, with none L and R */
+    padding: 16px 0 10px 0; /* Adds a 10px inner spacing, with none L and R */
     margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
 	box-shadow: 0 2px 18px rgba(89, 88, 89, 0.2); /* adds drop shadow */
     position: fixed; /* adds scroll */
@@ -218,6 +218,8 @@ nav {
     width: 100%;
 }
 */
+
+nav { width: auto; float: right; }
 
 .logo {
     max-width: 150px;
@@ -238,6 +240,7 @@ nav > ul {                                        /* removing bullet points in u
 }
 
 .navtoggle li .icon {                      /*positions hamburger menu icon and makes icon larger */
+    position: absolute;
     right: 0;
     top: 2px;
     font-size: 20px;
@@ -307,7 +310,7 @@ footer{
 
 /* Main section */
 main {
-    padding-top: 88px;
+    padding-top: 64px;
     background-color:#f6f6f6;
   }
 
