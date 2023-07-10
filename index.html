@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Wix+Madefor+Display:wght@800&display=swap" rel="stylesheet">    
     <title>Rachel Radulski's Portfolio</title>
+    <script src="https://kit.fontawesome.com/4a994b553b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> 
@@ -17,20 +18,23 @@
     <!-- For the header -->
     <header>
         <!-- For the navigation -->
-        <div class="container">  
-            <a href="index.html">
-                <picture> <!-- open logo image-->
-                    <source srcset="img/general/logo@2x.png" media="(max-width:767px)">
-                    <img class="logo" src="img/general/logo@2x.png" alt="logo">
-                </picture> <!-- close logo image-->
-            </a>
+        <div class="container">
+            <div class="navtoggle" id="myNavtoggle">  
+                <a href="index.html">
+                    <picture> <!-- open logo image-->
+                        <source srcset="img/general/logo@2x.png" media="(max-width:767px)">
+                        <img class="logo" src="img/general/logo@2x.png" alt="logo">
+                    </picture> <!-- close logo image-->
+                </a>
             <nav>
                 <ul class="navigation"> <!-- open navigation links -->
                   <li><a href="index.html" class="nav_link">Work</a></li>
                   <li><a href="about.html" class="nav_link">About</a></li>
-                  <li><a href="#contact" class="nav_link">Contact</a></li>
+                  <li><a href="#contact" class="nav_link" onclick="menuToggle()">Contact</a></li>
+                  <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                 </ul> <!-- close navigation links -->
             </nav> 
+            </div>
         </div>
     </header>
     
@@ -186,6 +190,7 @@
             <p>Copyright Rachel Radulski 2023</p>
         </div> <!-- container/wrapper -->
     </footer> <!-- whole section block-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>

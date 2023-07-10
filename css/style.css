@@ -207,34 +207,59 @@ a:hover, a:focus {
     background-color: #fefefe;
     padding: 10px 0; /* Adds a 10px inner spacing, with none L and R */
     margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
-    text-align: center;
 	box-shadow: 0 2px 18px rgba(89, 88, 89, 0.2); /* adds drop shadow */
     position: fixed; /* adds scroll */
     width: 100%; /* expands to full screen widths */
 }
 
+/*
 nav {
     display: inline-block;
     width: 100%;
 }
+*/
 
 .logo {
-    max-width: 250px;
+    max-width: 150px;
 }
   
-nav > ul { /* removing bullet points in unordered list */
+nav > ul {                                        /* removing bullet points in unordered list */
     list-style-type: none;
     padding: 0;
+    margin: 0;                                    /* removes margin gap */
 }
 
-nav > ul > li { /* moving list items in unordered list to one line */
-    display: inline-block;
-    width: auto;
-    text-align: center;
+.navtoggle li:not(:last-child) {            /* hides all the list elements except for the hamburger menu icont */
+    display: none;
 }
 
-nav > ul > li > a { /* links that are list elements within unordered list */
-    padding: 0 12px;
+.navtoggle, .navtoggle.responsive {        /*positions menu icon to the R of <header> and aligns it with the logo */
+    position: relative;
+}
+
+.navtoggle li .icon {                      /*positions hamburger menu icon and makes icon larger */
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+}
+
+.navtoggle.responsive li  {           /*overrides previous code and shows the complete menu when .responsive class is toggled */
+    display: block;
+}
+
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+  
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #e7e7e7;
+}
+  
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
 }
 
 /* Footer & Contact Section */
@@ -282,7 +307,7 @@ footer{
 
 /* Main section */
 main {
-    padding-top: 137px;
+    padding-top: 88px;
     background-color:#f6f6f6;
   }
 
@@ -790,6 +815,7 @@ main {
           }
         .logo {
             height: auto;
+            min-width: 250px;
         }
 
         .imagery {
@@ -804,6 +830,30 @@ main {
             margin-top: 44px;
             margin-bottom: 16px;
         }
+
+        nav > ul > li {             /* moving items in unordered list to one line aka side by side */
+            display: inline-block;
+            width: auto;
+            text-align: center;
+        }
+
+        nav > ul > li > a {         /* links that are list elements within unordered list */
+            padding: 0 12px;
+        }
+
+        .navtoggle li:not(:last-child) {                /* adds back in (makes visable) navigation links */
+            display: inline-block;
+        }
+
+        .navtoggle li:last-child {                      /* hides hamburger menu icon */
+            display: none;
+        }
+
+        nav > ul {                              /* adds back margins to ul */
+            margin: 1em 0;
+          }
+  
+      
     }
 
 
