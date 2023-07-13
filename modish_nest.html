@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,19 +40,28 @@
  <main> <!-- For the intro section -->
     <div id="intro"> <!-- whole section block-->
        <div class="container"> <!-- container/wrapper -->
-           <h1>Modish Nest</h1>
-           <picture> <!-- open modish nest preview image -->
-            <source srcset="img/home/preview_modish_nest@1x.jpg" media="(max-width:767px)">
-            <img src="img/home/preview_modish_nest@1x.jpg" alt="Modish Nest">
-            </picture> <!-- close modish nest preview image -->
-            <p> Modish Nest is a furniture store responsive web app that brings style and sophistication into living spaces. At Modish Nest, furniture is curated into carefully selected collections that embody the timeless elegance and innovative designs of the mid-century era, while seamlessly blending with the contemporary aesthetic of today. </p>
-            <h3>Table of Contents</h3>
-            <a href="#context">Context & Objective</a><br />
-            <a href="#user-flow">User Flow</a><br />
-            <a href="#wireframes">Wireframes</a><br />
-            <a href="#testing">User Testing</a><br />
-            <a href="#brand">Brand Guidelines</a><br />
-            <a href="#final-designs">Final Designs</a><br />
+        <h1>Modish Nest</h1> <!-- heading for the project one -->
+                <p> Modish Nest is a furniture store responsive web app that brings style and sophistication into living spaces. At Modish Nest, furniture is curated into carefully selected collections that embody the timeless elegance and innovative designs of the mid-century era, while seamlessly blending with the contemporary aesthetic of today. </p>
+        <div class="row-last"> <!-- open row that holds (2) columns for project one -->
+            <div class="column col-lg-8"> <!-- open first column: for image -->
+                <picture> <!-- open modish nest image-->
+                    <source srcset="img/home/preview_modish_nest@1x.jpg" media="(max-width:767px)">
+                    <img class="pic-mn" src="img/home/preview_modish_nest@1x.jpg" alt="Modish Nest">
+                </picture> <!-- close modish nest image-->
+                
+            </div> <!-- end first column: for image -->
+            <div class="column col-md-12 col-lg-4"> <!-- open second column: for text -->
+                <div class="toc">
+                    <h3>Table of Contents</h3>
+                    <a href="#context">Context & Objective</a><br>
+                    <a href="#user-flow">User Flow</a><br>
+                    <a href="#wireframes">Wireframes</a><br>
+                    <a href="#testing">User Testing</a><br>
+                    <a href="#brand">Brand Guidelines</a><br>
+                    <a href="#final-designs">Final Designs</a><br>
+                </div>
+            </div> <!-- end second column: for text -->
+        </div> <!-- end row that holds (2) columns for project one -->
        </div> <!-- container/wrapper -->
    </div> <!-- whole section block--> <!-- close intro section-->
 
@@ -579,3 +588,4 @@
 <script src="js/scripts.js"></script>
 </body>
 </html>
+
