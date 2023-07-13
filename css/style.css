@@ -64,27 +64,6 @@ h4 {
 }
 
 
-/* Links */
-a {
-    color: #1F8F89;
-    font-weight: 700;
-    text-decoration: none; /* No underlining */
-    transition: .4s;
-    opacity: 1;
-}
-
-a:hover, a:focus {
-    color: #23B9B0; /* change the link text color to lighter teal on hover */
-    text-decoration: none; /* No underlining */
-}
-
-
-.nav_link {
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
-
-
 /* Buttons*/
 .button, .button:visited {
     display: inline-block;              /* since the <a> tag is inline by default, we need to change this to inline-block */
@@ -155,21 +134,26 @@ a:hover, a:focus {
   #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
+    bottom: 48px; /* Place the button at the bottom of the page */
+    right: 48px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
+    background-color: #e68b04; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 8px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    transition-duration: 0.4s;
+
   }
   
   #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: #e99d2b; /* Add a dark-grey background on hover */
   }
   
 
@@ -201,11 +185,30 @@ a:hover, a:focus {
     padding-bottom: 44px; 
 }
 
+/* Links */
+a {
+    color: #1F8F89;
+    font-weight: 700;
+    text-decoration: none; /* No underlining */
+    transition: .4s;
+    opacity: 1;
+}
+
+a:hover, a:focus {
+    color: #23B9B0; /* change the link text color to lighter teal on hover */
+    text-decoration: none; /* No underlining */
+}
+
+
+.nav_link {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
 
  /* Header & Nav section */
  header {
     background-color: #fefefe;
-    padding: 16px 0 10px 0; /* Adds a 10px inner spacing, with none L and R */
+    padding: 16px 8px 8px 8px; /* Adds a 10px inner spacing, with none L and R */
     margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
 	box-shadow: 0 2px 18px rgba(89, 88, 89, 0.2); /* adds drop shadow */
     position: fixed; /* adds scroll */
@@ -219,7 +222,7 @@ nav {
 }
 */
 
-nav { width: auto; float: right; }
+
 
 .logo {
     max-width: 150px;
@@ -249,20 +252,26 @@ nav > ul {                                        /* removing bullet points in u
 
 .navtoggle.responsive li  {           /*overrides previous code and shows the complete menu when .responsive class is toggled */
     display: block;
+    width: 100%;
 }
 
 .navtoggle.responsive nav {
-    padding: 24px 0 0;
+    padding: 8px 0 0;
 }
   
   .navtoggle.responsive li  {
     display: block;
     padding: 10px 0;
-    border-top: 1px solid #e7e7e7;
+    border-top: .5px solid #e7e7e7;
 }
-  
+
+.navtoggle.responsive li:nth-child(3)  {
+    padding-bottom: 6px;
+}
+
   .navtoggle.responsive li:last-child  {
-    padding: 0 0 10px;
+    padding: 0;
+    border-top: none;
 }
 
 /* Footer & Contact Section */
@@ -310,7 +319,7 @@ footer{
 
 /* Main section */
 main {
-    padding-top: 64px;
+    padding-top: 54px;
     background-color:#f6f6f6;
   }
 
@@ -329,9 +338,11 @@ main {
     #hero h1 {
         font-family: 'Wix Madefor Display', sans-serif;
         font-weight: 800;
-        font-size: 3.4em;
+        font-size: 2.9em;
         color: #23B9B0;
         margin: 20px 0; /* default margins changed to top 20 px bottom 20 px */
+        text-transform: uppercase;
+        letter-spacing: .09em;
     }
 
     #hero h2{
@@ -395,6 +406,12 @@ main {
         text-align: center;
     }
 
+    .resume {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+
     /* My Story */
     #about h2 {
         text-align: center;
@@ -418,10 +435,7 @@ main {
         padding: 4px 0;
     }
 
-    .resume {
-        text-align: center;
-    }
-
+   
     #about .row-last{
         padding-bottom: 22px;
     }
@@ -438,12 +452,11 @@ main {
 
     /* Intro Section */
     #intro {
-        text-align: left;
+        text-align: center;
         background-color: #fefefe; /* makes background color same as header */
         padding: 20px 0; /* adds 20px to top and bottom */
         display: inline-block; /* margins of elements will only affect elements in this section */
         width: 100%; /* will expand and shrink to full browser width */
-        text-align: center;
     }
 
     #intro h1 {
@@ -451,8 +464,8 @@ main {
         font-weight: 900;
         font-size: 3.2em;
         color: #1F8F89;
-        margin: 20px 24px 20px 0; /* default margins changed to top 24 px bottom 24 px */
-        text-align: left;
+        margin: 20px 20px 20px 20; /* default margins changed to top 24 px bottom 24 px */
+        text-align: center;
         text-transform: uppercase;
     }
     
@@ -525,6 +538,22 @@ main {
         text-align: center;
     }
 
+    #process ul{
+        padding-left: 24px;
+    }
+
+    .example{
+        padding: 12px;
+    }
+
+    .wf{
+        max-width: 40%;
+        max-height: 40%;
+    }
+
+    .mockups{
+        text-align: center;
+    }
 
 
 /* ANIMATION PROJECT LANDSCAPE */
@@ -663,6 +692,7 @@ main {
             padding: 44px;
             float: left;
             margin-bottom: 44px;
+            display: block;
         }
 
        .col-md-2{
@@ -735,22 +765,16 @@ main {
             margin-top: 0;
         }
 
-        .c-i {
-            height: 130px;
-        }
-
-        .t-i{
-            height: 400px;
-        }
-
         .example {
-            height: auto;
-            width: auto;
+            height: 100%;
+            width: 100%;
+            padding: 8px;
         }
 
         .imagery .col-3{
             margin-bottom: 24px;
             padding: 8px;
+            display: inline-block;
         }
 
         #intro .container, #process .container{
@@ -895,7 +919,23 @@ main {
             margin-bottom: 0;
         }
 
+        .twenty{
+            max-width: 20%;
+        }
       
+        .fifty{
+            max-width: 50%;
+        }
+
+        .about-intro{
+            padding-top: 8px;
+        }
+
+        .about-content h1{
+            margin-bottom: 32px;
+        }
+
+        nav { width: auto; float: right; }
     }
 
 
@@ -1048,6 +1088,10 @@ main {
 
           #intro a{
             font-size: 18px;
+          }
+
+          #intro{
+            padding: 44px 0;
           }
 
         
