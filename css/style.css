@@ -23,6 +23,10 @@ Font Family; DM Sans
     box-sizing: border-box;
   }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* Typography*/
 body {
@@ -63,6 +67,144 @@ h4 {
     color:#525252;
 }
 
+/* Header Styling */
+header {
+    position: fixed;                /* adds scroll */
+    width: 100%;                    /* expands to full screen widths */
+    background-color: #fefefe;
+    padding: 16px 8px 8px 8px;      /* Adds a 10px inner spacing, with none L and R */
+    margin: 0 auto;                 /* No spacing to top and bottom and auto spacing to left and right */
+	box-shadow: 0 2px 18px rgba(89, 88, 89, 0.2);   /* adds drop shadow */
+}
+
+
+/* Layout styling */
+.container {
+    padding: 0 15px;
+  }
+
+.logo {
+    max-width: 150px;
+}
+
+main {
+    padding-top: 54px;
+    background-color:#f6f6f6;
+}
+
+.row {
+    margin: 28px 0; /* 25px top and bottom, 0 left and right */
+    padding-bottom: 28px; 
+    border-bottom: 1px 
+    solid #e0e0e0; 
+    }
+
+  
+.row-last {
+    margin: 28px 0 0 0; /* 25px top and bottom, 0 left and right */
+    padding-bottom: 44px; 
+}
+
+
+/* Navigation */
+a {
+    color: #1F8F89;
+    font-weight: 700;
+    text-decoration: none;                   /* No underlining */
+    transition: .4s;
+}
+
+a:hover, a:focus {
+  color: #1FA59D;
+  text-decoration: none;
+}
+
+a:visited, a:focus {
+  color: #1F8F89;
+}
+
+a:active, a:focus {
+  color: #1F8F89;
+}
+
+.menu {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 8px;
+    color: darkorange;
+  }
+  
+.menu::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1F8F89;
+    opacity: .5;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+  
+  
+.menu:hover::before {
+    transform: scaleX(1);
+}
+
+.menu:visited{
+    color: #474747;
+}
+
+nav>ul {                                        /* removing bullet points in unordered list */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;                                    /* removes margin gap */
+}
+
+nav>ul>li>a {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+.navtoggle li:not(:last-child) {                /* hides all the list elements except for the hamburger menu icont */
+    display: none;
+}
+
+.navtoggle, .navtoggle.responsive {             /*positions menu icon to the R of <header> and aligns it with the logo */
+    position: relative;
+}
+
+.navtoggle li .icon {                           /*positions hamburger menu icon and makes icon larger */
+    padding-right: 0;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+  }
+
+.navtoggle.responsive nav {
+    padding: 8px 0 0;
+}
+
+.navtoggle.responsive li {                    /*overrides previous code and shows the complete menu when .responsive class is toggled */
+    display: block;
+    padding: 10px 0;
+    border-top: .5px solid #e7e7e7;
+    text-align: right;
+}
+
+.navtoggle.responsive li:last-child {
+    padding: 0;
+    border-top: none;
+}
+
+.navtoggle.responsive li:nth-child(3)  {
+    padding-bottom: 6px;
+}
+
 
 /* Buttons*/
 .button, .button:visited {
@@ -96,40 +238,35 @@ h4 {
   .button:hover:after {
     width: 110%;
   }
-  
 
   .ghost_button, .ghost_button:visited {
-    display: inline-block;              
+    display: inline-block;              /* since the <a> tag is inline by default, we need to change this to inline-block */
     background-color: transparent;
-    border: 1px solid #141414;
-    color: #1F8F89;                  
-    font-size: 16px;
+    border: 2px solid #d78000;
+    color: #d78000;                  /* needed to override the default link color */
+    font-size: 14px;
     text-decoration: none; 
     letter-spacing: 0.12em;
     text-transform: uppercase;
     border-radius: 8px;            
     padding: 12px 16px;
-    margin: 8px 16px 20px 16px;
+    margin-top: 16px;
+    margin-bottom: 24px;
     opacity: 1;
-    transition-duration: 0.2s;
+    transition-duration: 0.5s;
   }
 
-  .button:after {
-    background-color: #54aaa2;
+  .ghost_button:after {
+    background-color: #d78000;
+    border: 2px solid #d78000;
     color: #ffffff;
-    border: 1px transparent;
   }
 
   .ghost_button:hover {
-    background-color: #54aaa2;
+    background-color: #d78000;
+    border: 2px solid #d78000;
     color: #ffffff;
-    border: 1px transparent;
   }
-/*
-  .ghost-button:hover:after {
-    width: 100%;
-  }
-*/
 
   #myBtn {
     display: none; /* Hidden by default */
@@ -158,123 +295,13 @@ h4 {
   }
   
 
-  /* Images */
+/* Images */
   img {
     width: 100%;
   }
 
-  * {
-    box-sizing: border-box;
-  }
-
-
-  /* Layout styling */
-  .container {
-    padding: 0 15px;
-  }
-
-  .row {
-    margin: 28px 0; /* 25px top and bottom, 0 left and right */
-    padding-bottom: 28px; 
-    border-bottom: 1px 
-    solid #e0e0e0; 
-    }
 
   
-  .row-last {
-    margin: 28px 0 0 0; /* 25px top and bottom, 0 left and right */
-    padding-bottom: 44px; 
-}
-
-/* Links */
-a {
-    color: #1F8F89;
-    font-weight: 700;
-    text-decoration: none; /* No underlining */
-    transition: .4s;
-    opacity: 1;
-}
-
-a:hover, a:focus {
-    color: #1FA59D; /* change the link text color to lighter teal on hover */
-    text-decoration: none; /* No underlining */
-}
-
-
-.nav_link {
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
-
- /* Header & Nav section */
- header {
-    background-color: #fefefe;
-    padding: 16px 8px 8px 8px; /* Adds a 10px inner spacing, with none L and R */
-    margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
-	box-shadow: 0 2px 18px rgba(89, 88, 89, 0.2); /* adds drop shadow */
-    position: fixed; /* adds scroll */
-    width: 100%; /* expands to full screen widths */
-}
-
-/*
-nav {
-    display: inline-block;
-    width: 100%;
-}
-*/
-
-
-
-.logo {
-    max-width: 150px;
-}
-  
-nav > ul {                                        /* removing bullet points in unordered list */
-    list-style-type: none;
-    padding: 0;
-    margin: 0;                                    /* removes margin gap */
-}
-
-.navtoggle li:not(:last-child) {            /* hides all the list elements except for the hamburger menu icont */
-    display: none;
-}
-
-.navtoggle, .navtoggle.responsive {        /*positions menu icon to the R of <header> and aligns it with the logo */
-    position: relative;
-}
-
-.navtoggle li .icon {                      /*positions hamburger menu icon and makes icon larger */
-    position: absolute;
-    right: 0;
-    top: 2px;
-    font-size: 20px;
-    padding-right: 0;
-}
-
-.navtoggle.responsive li  {           /*overrides previous code and shows the complete menu when .responsive class is toggled */
-    display: block;
-    width: 100%;
-}
-
-.navtoggle.responsive nav {
-    padding: 8px 0 0;
-}
-  
-  .navtoggle.responsive li  {
-    display: block;
-    padding: 10px 0;
-    border-top: .5px solid #e7e7e7;
-}
-
-.navtoggle.responsive li:nth-child(3)  {
-    padding-bottom: 6px;
-}
-
-  .navtoggle.responsive li:last-child  {
-    padding: 0;
-    border-top: none;
-}
-
 /* Footer & Contact Section */
 
 footer{
@@ -319,10 +346,6 @@ footer{
 
 
 /* Main section */
-main {
-    padding-top: 54px;
-    background-color:#f6f6f6;
-  }
 
 
 /* ---- INDEX/HOME ---- */
@@ -647,7 +670,13 @@ main {
     Medium devices (640px and larger)
     ================================= */
     @media only screen and (min-width: 640px) {
+       
+        .menu:visited{
+            color: #1F8F89;
+        }
+
         header {
+            position: relative;
             text-align: unset;          /* removes text align: center */
             padding: 20px 0 13px;       /* added padding to align with logo */
         }
@@ -658,12 +687,45 @@ main {
             margin-top: 2px;            /* added top margin to align with logo */
         }
 
+        .navtoggle.responsive li {
+            display: block;
+            padding: 0;
+            border-top: none;
+          }
+
+        .navtoggle.responsive nav{
+            padding: 0;
+          }
+
+        nav > ul > li {             /* moving items in unordered list to one line aka side by side */
+            display: inline-block;
+            width: auto;
+            text-align: center;
+        }
+
+        nav > ul > li > a {         /* links that are list elements within unordered list */
+            padding: 0 12px;
+        }
+        
+
+        .navtoggle li:not(:last-child) {                /* adds back in (makes visable) navigation links */
+            display: inline-block;
+        }
+
+        .navtoggle li:last-child {                      /* hides hamburger menu icon */
+            display: none;
+        }
+
+        nav > ul {                              /* adds back margins to ul */
+            margin: 1em 0;
+          }
+
         body {
             font-size: 16px;            /* changes changes font size from 16px to 18px */
         }
 
         main {
-            padding-top: 94px;          /* changes top padding to eliminate gap between header and hero */
+            padding-top: 0px;          /* changes top padding to eliminate gap between header and hero */
         }
 
         [class*="col-"] {               /* class attribute selcector */
@@ -856,12 +918,12 @@ main {
             flex-direction: column;
           }
         
-          .text-wrapper {
+        .text-wrapper {
             order: 1;
             margin-right: 1;
             margin-left: 1;
-          }
-          .wrap {
+        }
+        .wrap {
             order: 2;
           }
         .logo {
@@ -882,27 +944,6 @@ main {
             margin-bottom: 16px;
         }
 
-        nav > ul > li {             /* moving items in unordered list to one line aka side by side */
-            display: inline-block;
-            width: auto;
-            text-align: center;
-        }
-
-        nav > ul > li > a {         /* links that are list elements within unordered list */
-            padding: 0 12px;
-        }
-
-        .navtoggle li:not(:last-child) {                /* adds back in (makes visable) navigation links */
-            display: inline-block;
-        }
-
-        .navtoggle li:last-child {                      /* hides hamburger menu icon */
-            display: none;
-        }
-
-        nav > ul {                              /* adds back margins to ul */
-            margin: 1em 0;
-          }
 
         #about ul{
             padding-left: 16px;
@@ -936,7 +977,6 @@ main {
             margin-bottom: 32px;
         }
 
-        nav { width: auto; float: right; }
         
     }
 
@@ -948,6 +988,10 @@ main {
     ================================= */
     @media only screen and (min-width: 1024px) {
         
+        .menu{
+            margin: 0 16px 8px 16px;
+        }
+
         .col-lg-7 {
             width: 58.33%;              /* 7 grid coloumn for index project image - splits page around 60/40 */
         }
