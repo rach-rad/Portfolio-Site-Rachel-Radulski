@@ -154,7 +154,7 @@ a:active, a:focus {
 }
 
 .menu:visited{
-    color: #474747;
+    color: #3D3D3D;
 }
 
 nav>ul {                                        /* removing bullet points in unordered list */
@@ -207,7 +207,7 @@ nav>ul>li>a {
 
 
 /* Buttons*/
-.button, .button:visited {
+.button, .button:visited, .button:active, .button:focus {
     display: inline-block;              /* since the <a> tag is inline by default, we need to change this to inline-block */
     background-color: #d78000;
     border: 2px solid #d78000;
@@ -239,7 +239,7 @@ nav>ul>li>a {
     width: 110%;
   }
 
-  .ghost_button, .ghost_button:visited {
+  .ghost_button, .ghost_button:visited, .ghost_button:active, .ghost_button:focus {
     display: inline-block;              /* since the <a> tag is inline by default, we need to change this to inline-block */
     background-color: transparent;
     border: 2px solid #d78000;
