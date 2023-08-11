@@ -32,12 +32,13 @@
 		</div>
 	</header>
    
+    
    <!-- Start main section -->
- <main> <!-- For the intro section -->
+   <main> <!-- For the intro section -->
     <div id="intro"> <!-- whole section block-->
        <div class="container"> <!-- container/wrapper -->
         <h1>Localite</h1> <!-- heading for the project one -->
-                <p> Modish Nest is a furniture store responsive web app that brings style and sophistication into living spaces. At Modish Nest, furniture is curated into carefully selected collections that embody the timeless elegance and innovative designs of the mid-century era, while seamlessly blending with the contemporary aesthetic of today. </p>
+                <p> Localite is a responsive location-based app aimed to help users discover new restaurants and venues and share their experiences. With a focus on authentic local recommendations users can find the best restaurants, cafes, bars, and more.</p>
         <div class="row-last"> <!-- open row that holds (2) columns for project one -->
             <div class="column col-lg-8"> <!-- open first column: for image -->
                 <picture> <!-- open modish nest image-->
@@ -47,14 +48,23 @@
                 
             </div> <!-- end first column: for image -->
             <div class="column col-md-12 col-lg-4"> <!-- open second column: for text -->
-                <div class="toc">
+                <div id="toc-localite">
                     <h3>Table of Contents</h3>
-                    <a href="#context">Context &amp; Objective</a><br>
+                    <a href="#process">Context &amp; Objective</a><br>
+                    <a href="#comp-analysis">Competitor Analysis</a><br>
+                    <a href="#interviews">User Interviews</a><br>
+                    <a href="#personas">User Personas</a><br>
+                    <a href="#mvp">MVP &amp; JTBD Framework</a><br>
                     <a href="#user-flow">User Flow</a><br>
-                    <a href="#wireframes">Wireframes</a><br>
-                    <a href="#testing">User Testing</a><br>
-                    <a href="#brand">Brand Guidelines</a><br>
+                    <a href="#lofi">Low-Fidelity Wireframes</a><br>
+                    <a href="#usability-test">Usability Testing</a><br>
+                    <a href="#moodboard">Moodboard</a><br>
+                    <a href="#pref">Preference Testing</a><br>
+                    <a href="#midfi">Mid-Fidelity Wireframes</a><br>
+                    <a href="#style-guide">Style Guide</a><br>
+                    <a href="#hifi">Moodboard</a><br>
                     <a href="#final-designs">Final Designs</a><br>
+                    <a href="#project-links">Full Case Study</a><br>
                 </div>
             </div> <!-- end second column: for text -->
         </div> <!-- end row that holds (2) columns for project one -->
@@ -62,466 +72,504 @@
    </div> <!-- whole section block--> <!-- close intro section-->
 
     <!-- open process section -->
-
     <div id="process"> <!-- Whole section block -->
-      
-        <div class="container"> <!-- Container/wrapper -->
+        <div class="container"> <!-- container/wrapper-->
             <h2>My Process</h2>
-        <!-- Open my process sections -->
-
-            <!-- Open row that holds (6) columns for context and objective -->    
-            <div>
-                <!-- open first column: for objective -->
-                <div id="context"> 
-                    <h3>Objective</h3>
-                    <p>Develop a user-friendly online shopping tool for mid-century modern furniture.</p>
-                </div> 
-                <!-- end first column: for objective -->
-
-                <!-- open second column: for audience -->
-                <div> 
-                    <h3>Audience</h3>
-                    <p>Adults aged 25 to 45 who prefer online shopping due to time constraints, difficulty finding desired items in physical stores, and the convenience of trying out and returning products without the need for in-person visits. </p>
-                </div> 
-                <!-- end second column: for audience -->
-
-                <!-- open third column: for time and accesability -->
-                <div> 
-                    <h3>Time &amp; Accessibility</h3>
-                    <p>Users can conveniently shop from anywhere with an internet connection during various time frames. This could be on a mobile device or desktop, a lunch break or on weekends, or on the go.</p>
-                </div> 
-                <!-- end third column: for time and accesability -->
-                
-                <!-- open fourth column: for user problems -->
-                <div> 
-                    <h3>User Problem</h3>
-                    <p>Furniture shopping in physical stores can be challenging for users due to limited availability, time constraints, and confusing navigation systems. Additionally, returning items in person can be a hassle. Online furniture stores also pose difficulties, such as limited product visibility, misleading item representations, complicated return processes, lack of personalized assistance, and overwhelming home page designs filled with excessive product displays and ads. These issues make it harder for users to have a smooth and enjoyable experience while searching for and purchasing their desired furniture and decor pieces.</p>
-                </div> 
-                <!-- end fourth column: for user problems -->
-                
-                <!-- open fith column: for goal -->
-                <div> 
-                    <h3>Goal</h3>
-                    <p>Make it easy for users to effortlessly browse through a wide selection of mid-century modern furniture, discover new items, find products that meet their needs, and complete transactions and returns with ease.</p>
-                </div> 
-                <!-- end fith column: for goal -->
-                
-                <!-- open sixth column: for solution -->
-                <div> 
-                    <h3>Solution</h3>
-                    <p>Develop a seamless and accessible responsive web app that simplifies the shopping process for mid-century modern furniture. The web app will offer a wide range of furniture and decor products, provide a user-friendly interface for easy browsing and selection, facilitate secure online transactions, and offer hassle-free return options. This solution aims to enhance the convenience and satisfaction of users while shopping for mid-century modern furniture online.</p>
-                </div> 
-                <!-- end sixth column: for solution -->
-            </div> 
-            <!-- End row that holds (6) columns for context and objective -->
+            <div class="row"> <!-- open ROW for CONTEXT-->
+                <h3>Objective</h3>
+                <p>Design a responsive web app for location-based recommendations that meets the requirements of its users and solves the problems they face with existing location-based recommendation apps.</p>
+                <h3>Target Audience</h3>
+                <p>Young adults (18 - 35 y.o) users of location-based recommendation apps, who want to effectively discover new venues to visit, without experiencing the problems they encounter when using existing apps. This age group was selected because research has shown has had increased interest in traveling since 2020.</p>
+                <h3>Hypothesis</h3>
+                <p>An app that utilizes locals' ratings and commentary to populate venue recommendations can improve user trust due to word-of-mouth psychology. By incorporating a social media aspect that enables users to share recommendations with friends and followers, the app can further engage its target audience.</p>
+                <h3>Key Features</h3>
+                <ul> <!-- open feature list -->
+                    <li>Post venue recommendations</li>
+                    <li>Save venues to a collection</li>
+                    <li>Create and share location guides</li>
+                    <li>Share stories of restaurant and venue experiences</li>
+                    <li>Create collaborative itineraries with other users</li>
+                </ul> <!-- close feature list -->
+            </div> <!-- close ROW for CONTEXT-->
             
-            <!-- Open row that holds (2) columns for user stories and flow -->
-            <div id="user-flow">
-                
-                <!-- open first column: for user stories -->
-                <div> 
-                    <h3>User Stories</h3>
-                    <ul> <!-- open user story list -->
-                        <!-- open orange tag list item-->
-                        <li>“As a new customer, I want to access the inventory without having to register, so that I can make sure this store has what I’m looking for before having to create an account.”</li>
-                        <!-- open green tag list item-->
-                        <li>“As a customer, I want to have access to advanced filtering options, so that I don’t have to browse through a lot of products to find what I’m looking for.”</li>
-                        <!-- open pink tag list item-->
-                        <li>“As a returning customer, I want to be able to save items that I cannot buy to a wish list, so that I can purchase them at a later date.”</li>    
-                    </ul> <!-- close user story list -->
-                </div> 
-                <!-- end first column: for user stories -->
-                
-                <!-- open second column: for user flow -->
-                <div> 
-                    <h3>User Flow</h3>       
+            <div class="row"> <!-- open ROW for COMPETITOR ANALYSIS-->
+                <div id="comp-analysis">
+                    <h3>Competitor Analysis</h3>
                     <picture> <!-- open user flow image -->
-                        <source srcset="img/projects/modish_nest/@2x/user_flow@2x.png" media="(max-width:767px)">
-                        <img src="img/projects/modish_nest/@2x/user_flow@2x.png" alt="user flow diagram">
+                        <source srcset="img/projects/localite/comp-analysis_01.png" media="(max-width:767px)">
+                        <img id="yelp" src="img/projects/localite/comp-analysis_01.png" alt="Yelp">
                     </picture> <!-- close user flow image --> 
-                </div> 
-                <!-- end second column: for user flow -->
+                    <h6>Competitor Overview</h6>
+                    <p>Popular platform connecting consumers with local businesses, particularly focusing on restaurant reservations and quotes, with a large user base and a presence in 32 countries.</p>
+                    <h6>SWOT Analysis</h6>
+                    <p>Strengths in benefiting businesses and consumers, weaknesses in global expansion and potential negative impact on local businesses, opportunities in social media development and technology/design improvements, and threats from competitors and potential lawsuits.</p>
+                    <h6>UX Analysis</h6>
+                    <p>Yelp can improve usability, navigation, and feedback, while offering compatibility across devices, clear differentiation, and effective calls to action.</p>
+                    <picture> <!-- open user flow image -->
+                        <source srcset="img/projects/localite/comp-analysis_02.png" media="(max-width:767px)">
+                        <img id="foursquare" src="img/projects/localite/comp-analysis_02.png" alt="FourSquare">
+                    </picture> <!-- close user flow image --> 
+                    <h6>Competitor Overview</h6>
+                    <p>Foursquare aims to understand how people move through the real world, with a focus on providing advanced technology and human interaction for businesses and users through its Foursquare City Guide and Swarm apps.</p>
+                    <h6>SWOT Analysis</h6>
+                    <p>Strengths lie in its advanced location technology, global expansion, and social influence, while its weaknesses include shifts in focus and outdated reviews. There are opportunities for improving social media influences, UX/UI features, and collaborations, and threats come from competitors and social media platforms.</p>
+                    <h6>UX Analysis</h6>
+                    <p>Offers usability and a straightforward layout, but improvements are needed in navigation, compatibility, and the sign-up process to enhance the user experience.</p>
+                </div> <!-- close ID COMPETITOR ANALYSIS-->
+            </div> <!-- close ROW for COMPETITOR ANALYSIS-->
 
-            </div>
-            <!-- End row that holds (2) columns for user stories and flow -->
-      
-            <!-- Open row that holds (2) columns for wireframes -->
-            <div id="wireframes">
+            <div class="row"> <!-- open ROW for USER INTERVIEWS-->
+                <div id="interviews">
+                    <h3>User Interviews</h3>
+                    <p>To guide the process, user interviews were conducted on 3 participants to gain insight on restaurant and venue search experiences from real users.</p>
+                    <h4>Patterns</h4>
+                    <p>Preference for sharing and documenting venue experiences, valuing local opinions, and relying on visual aids and objective information for decision-making, while commonly using Google Maps and Instagram in their process.</p>
+                    <h4>Goals</h4>
+                    <p>Desire for updated images and videos that accurately showcase venue aspects, clear and objective information like price and hours, a save feature for future visits, and relevant filtered search results and suggestions.</p>
+                    <h4>Pain Points</h4>
+                    <p>Usability issues with other recommendation platforms like Yelp, the need to search multiple platforms for important venue information, and dissatisfaction with poor search result functionality and user interface.</p>
+                    <h4>Suprises</h4>
+                    <p>Interest in capturing and sharing venue experiences through images and videos, as well as documenting their own memories. Additionally, one participant completely avoided an industry-standard platform due to frustrating usability.</p>
+                    <h4>Quotes</h4>
+                    <ul class="quote">
+                        <li>“The order that results appear is important, focusing on straight to the point, current results that can be filtered from lots of different categories”</li>
+                        <li>“I use Tiktok because you get a person narrating their experience and you see what the food looks like”</li>
+                    </ul>
+                </div> <!-- close USER INTERVIEWS-->
+            </div> <!-- close ROW for USER INTERVIEWS-->
 
-                <!-- open first column: for lowfi wireframes -->
-                <div> 
-                    <h3>Low Fidelity Wireframes</h3>
-                    <p>“As a new customer, I want to access the inventory without having to register, so that I can make sure this store has what I’m looking for before having to create an account.”</p>
-                    
-                    <!-- open mobile lofi wireframes-->
-                    <div class="mobile-wireframes"> 
-                        <h4>Mobile</h4>
-                        <picture> <!-- open image one -->
-                            <source srcset="img/projects/modish_nest/@2x/lofi_01@2x.png" media="(max-width:767px)">
-                            <img src="img/projects/modish_nest/@2x/lofi_01@2x.png" alt="lofi wireframe one">
-                        </picture> <!-- close image one -->   
-                        <picture> <!-- open image two -->
-                            <source srcset="img/projects/modish_nest/@2x/lofi_02@2x.png" media="(max-width:767px)">
-                            <img src="img/projects/modish_nest/@2x/lofi_02@2x.png" alt="lofi wireframe two">
-                        </picture> <!-- close image two -->
-                        <picture> <!-- open image three -->
-                            <source srcset="img/projects/modish_nest/@2x/lofi_03@2x.png" media="(max-width:767px)">
-                            <img src="img/projects/modish_nest/@2x/lofi_03@2x.png" alt="lofi wireframe three">
-                        </picture> <!-- close image three -->
-                        <picture> <!-- open image four -->
-                            <source srcset="img/projects/modish_nest/@2x/lofi_04@2x.png" media="(max-width:767px)">
-                            <img src="img/projects/modish_nest/@2x/lofi_04@2x.png" alt="lofi wireframe four">
-                        </picture> <!-- close image four -->
-                        <picture> <!-- open image five -->
-                            <source srcset="img/projects/modish_nest/@2x/lofi_05@2x.png" media="(max-width:767px)">
-                            <img src="img/projects/modish_nest/@2x/lofi_05@2x.png" alt="lofi wireframe five">
-                        </picture> <!-- close image five -->
-                        <picture> <!-- open image six -->
-                            <source srcset="img/projects/modish_nest/@2x/lofi_06@2x.png" media="(max-width:767px)">
-                            <img src="img/projects/modish_nest/@2x/lofi_06@2x.png" alt="lofi wireframe six">
-                        </picture> <!-- close image six -->
-                        <picture> <!-- open image seven -->
-                            <source srcset="img/projects/modish_nest/@2x/lofi_07@2x.png" media="(max-width:767px)">
-                            <img src="img/projects/modish_nest/@2x/lofi_07@2x.png" alt="lofi wireframe seven">
-                        </picture> <!-- close image seven -->
-                        <picture> <!-- open image eight -->
-                            <source srcset="img/projects/modish_nest/@2x/lofi_08@2x.png" media="(max-width:767px)">
-                            <img src="img/projects/modish_nest/@2x/lofi_08@2x.png" alt="lofi wireframe eight">
-                        </picture> <!-- close image eight -->
-                    </div> 
-                    <!-- close mobile lofi wireframes-->
-                    
-                    <!-- open desktop lofi wireframes -->
-                    <div class="desktop-wireframes"> 
-                        <h4>Desktop</h4> 
-                        <picture> <!-- open image nine -->
-                            <source srcset="img/projects/modish_nest/@2x/lofi_09@2x.png" media="(max-width:767px)">
-                            <img src="img/projects/modish_nest/@2x/lofi_09@2x.png" alt="lofi wireframe nine">
-                        </picture> <!-- close image nine -->   
-                        <picture> <!-- open image ten -->
-                            <source srcset="img/projects/modish_nest/@2x/lofi_10@2x.png" media="(max-width:767px)">
-                            <img src="img/projects/modish_nest/@2x/lofi_10@2x.png" alt="lofi wireframe ten">
-                        </picture> <!-- close image ten -->
-                        <picture> <!-- open image eleven -->
-                            <source srcset="img/projects/modish_nest/@2x/lofi_11@2x.png" media="(max-width:767px)">
-                            <img src="img/projects/modish_nest/@2x/lofi_11@2x.png" alt="lofi wireframe eleven">
-                        </picture> <!-- close image eleven -->
-                    </div> 
-                    <!-- close desktop lofi wireframes -->  
-                </div> 
-                <!-- end first column: for lofi wireframes -->
-                
-                <div class="midfi-wireframes"> 
-                <!-- open second column: for midfi wireframes -->
-                    <h3>Mid-Fidelity Wireframes</h3>
-                    <picture> <!-- open image one -->
-                        <source srcset="img/projects/modish_nest/@2x/midfi_01@2x.png" media="(max-width:767px)">
-                        <img src="img/projects/modish_nest/@2x/midfi_01@2x.png" alt="midfi wireframe one">
-                    </picture> <!-- close image one -->   
-                    <picture> <!-- open image two -->
-                        <source srcset="img/projects/modish_nest/@2x/midfi_02@2x.png" media="(max-width:767px)">
-                        <img src="img/projects/modish_nest/@2x/midfi_02@2x.png" alt="midfi wireframe two">
-                    </picture> <!-- close image two -->
-                    <picture> <!-- open image three -->
-                        <source srcset="img/projects/modish_nest/@2x/midfi_03@2x.png" media="(max-width:767px)">
-                        <img src="img/projects/modish_nest/@2x/midfi_03@2x.png" alt="midfi wireframe three">
-                    </picture> <!-- close image three -->
-                    <picture> <!-- open image four -->
-                        <source srcset="img/projects/modish_nest/@2x/midfi_04@2x.png" media="(max-width:767px)">
-                        <img src="img/projects/modish_nest/@2x/midfi_04@2x.png" alt="midfi wireframe four">
-                    </picture> <!-- close image four -->
-                    <picture> <!-- open image five -->
-                        <source srcset="img/projects/modish_nest/@2x/midfi_05@2x.png" media="(max-width:767px)">
-                        <img src="img/projects/modish_nest/@2x/midfi_05@2x.png" alt="midfi wireframe five">
-                    </picture> <!-- close image five -->
-                    <picture> <!-- open image six -->
-                        <source srcset="img/projects/modish_nest/@2x/midfi_06@2x.png" media="(max-width:767px)">
-                        <img class="midfi-desktop" src="img/projects/modish_nest/@2x/midfi_06@2x.png" alt="midfi wireframe six">
-                    </picture> <!-- close image six -->
-                </div> 
-                <!-- close second column: for midfi wireframes --> 
-            </div>
-            <!-- End row that holds (2) columns for wireframes -->
-
-            <!-- Open row that holds (4) columns for user testing -->
-            <div class="row">
-
-                <!-- open first column: for preferance test wireframes -->
-                <div id="testing"> 
-                    <h3>User Testing</h3>   
-                    <p>To begin user testing, I conducted a preference test with three participants aimed to create a user-centric design aligned with the target audience's tastes. </p>
-                    
-                    <!-- open home screen tests container -->
-                    <div class="home-images"> 
-                        <div class="column col-5">  <!-- open image one container -->
-                            <h5>Home, V1</h5>
-                            <picture> <!-- open image one -->
-                                <source srcset="img/projects/modish_nest/@2x/user_testing_01@2x.png" media="(max-width:767px)">
-                                <img src="img/projects/modish_nest/@2x/user_testing_01@2x.png" alt="user testing wireframe one">
-                            </picture>
-                        </div> <!-- close image one container -->
-                           
-                        <div class="column col-5"> <!-- open image two container -->
-                            <h5>Home, V2</h5>
-                            <picture> <!-- open image two -->
-                                <source srcset="img/projects/modish_nest/@2x/user_testing_02@2x.png" media="(max-width:767px)">
-                                <img src="img/projects/modish_nest/@2x/user_testing_02@2x.png" alt="user testing wireframe two">
-                            </picture>
-                        </div> <!-- close image two container -->
-                        
-                        <div class="column col-5"> <!-- open image three container -->
-                            <h5>Home, V3</h5>
-                            <picture> <!-- open image three -->
-                                <source srcset="img/projects/modish_nest/@2x/user_testing_03@2x.png" media="(max-width:767px)">
-                                <img src="img/projects/modish_nest/@2x/user_testing_03@2x.png" alt="user testing wireframe three">
-                            </picture>
-                        </div> <!-- close image three container -->
-                        
-                        <div class="column col-5">  <!-- open image four container -->
-                            <h5>Home, V4</h5>
-                            <picture> <!-- open image four -->
-                                <source srcset="img/projects/modish_nest/@2x/user_testing_04@2x.png" media="(max-width:767px)">
-                                <img src="img/projects/modish_nest/@2x/user_testing_04@2x.png" alt="user testing wireframe four">
-                            </picture>
-                        </div> <!-- close image four container -->   
+            <div class="row"> <!-- open ROW for USER PERSONAS-->
+                <div id="personas">
+                    <h3>User Personas</h3>
+                    <div class="upcontainer">
+                        <div class="upimg-container">
+                            <img src="img/projects/localite/persona_01.png" alt="Mira">
+                        </div> <!-- close UP IMG-->
+                        <div class="uptext">
+                            <h4>Mira</h4>
+                            <h6>Female, 28, Married, Project Manager</h6>
+                            <p>A busy urban homeowner who enjoys going out to reward herself after work and takes initiative in planning outings with friends.</p>
+                            <h6>End Goals</h6>
+                            <ul>
+                                <li>Find and support local businesses in her community.</li>
+                                <li>Discover venue suggestions that are transparent about the location, price, ambiance, and product.</li>
+                                <li>Avoid recommendations that come with any distracting, negative surprises.</li>
+                            </ul>
+                        </div><!-- close UP TEXT-->   
+                    </div> <!-- close UP CONTAINER-->
+                    <div class="upcontainer">
+                        <div class="upimg-container">
+                            <img src="img/projects/localite/persona_02.png" alt="Sydney">
+                        </div> <!-- close UP IMG-->
+                        <div class="uptext">
+                            <h4>Sydney</h4>
+                            <h6>Female, 21, Relationship, Student</h6>
+                            <p>A recent graduate who likes “no frills” venues, who is taking a road trip from South Carolina to Washington state where she will attend grad school.</p>
+                            <h6>End Goals</h6>
+                            <ul>
+                                <li>Discover authentic places to eat and drink while on her road trip journey.</li>
+                                <li>Avoid any “tourist trap” recommendations.</li>
+                                <li>Utilize app features when planning her trip, on the go, and when no internet service is available.</li>
+                            </ul>
+                        </div><!-- close UP TEXT-->   
+                    </div> <!-- close UP CONTAINER-->
+                    <div class="upcontainer">
+                        <div class="upimg-container">
+                            <img src="img/projects/localite/persona_03.png" alt="Daniel">
+                        </div> <!-- close UP IMG-->
+                        <div class="uptext">
+                            <h4>Daniel</h4>
+                            <h6>Male, 32, Single, Software Engineer</h6>
+                            <p>A bachelor in the LGBTQ+ community worker who frequents staying at short-term rentals due to his desire to travel and explore different cultures.</p>
+                            <h6>End Goals</h6>
+                            <ul>
+                                <li>Find reliable LGBTQ+ friendly venues during his travels.</li>
+                                <li>obtain recommendations from locals for everyday cafes and work-friendly spaces</li>
+                                <li>Access a specific search criteria to get accurate and relevant results.</li>
+                            </ul>
+                        </div><!-- close UP TEXT-->   
+                    </div> <!-- close UP CONTAINER-->
+                </div> <!-- close USER PERSONAS-->
+            </div> <!-- close ROW for USER PERSONAS-->
             
-                        <div class="column col-5"> <!-- open image five container -->
-                            <h5>Home, V5</h5>
-                            <picture> <!-- open image five -->
-                                <source srcset="img/projects/modish_nest/@2x/user_testing_05@2x.png" media="(max-width:767px)">
-                                <img src="img/projects/modish_nest/@2x/user_testing_05@2x.png" alt="user testing wireframe five">
-                            </picture>
-                        </div> <!-- close image five container -->
-                        
-                    </div> <!-- close home screens container -->
-                    
-                    
-                    <!-- open test collections screens container -->
-                    <div class="c-images"> 
-                        <div class="column col-5"> <!-- open image six container -->
-                            <h5>Collections, V1</h5>
-                            <picture> <!-- open image six -->
-                                <source srcset="img/projects/modish_nest/@2x/user_testing_06@2x.png" media="(max-width:767px)">
-                                <img src="img/projects/modish_nest/@2x/user_testing_06@2x.png" alt="user testing wireframe six">
-                            </picture>
-                        </div> 
-                        <!-- close image six container -->
+            <div class="row"> <!-- open ROW for MVP/JTBD/TASKS-->
+                <div id="mvp"> <!-- open ID for MVP/JTBD/TASKS-->
+                    <h3>MVP and Jobs to be Done Framework</h3>
+                    <p>This approach allowed me to better understand the needs and goals of the user so I could include corresponding features and functionalities to improve user experience.</p>
+                    <h4>MVP Objective</h4>
+                    <p>Gain validation from target users that such an app will be used to review and recommend local venues, discover new venues, save and organize their findings, share their experiences, and be trusted by its users.</p>
+                    <ul class="numbered">
+                        <li>When finding a restaurant to visit, Mira wants to know how expensive it is and see pictures of the food and interior, so she can assess if the quality is worth the price.</li>
+                        <li>When going out, Sydney wants to document his experiences , so she can look back at all the fun she had with her friends or yummy meals she ate.</li>
+                        <li>As a frequent traveler staying at long term rentals, Daniel wants to know where the locals are going, so he can meet new people at a trusted location.</li>
+                        <li>As a home owner, Mira wants to know the local-owned businesses, so she can support her community.</li>
+                        <li>When visiting a new city, Sydney wants to save the cool venues she visited, so she can remember them for future reference.</li>
+                        <li>As an individual in the LGBTQ+ community, Daniel wants to know what bars are LGBTQ+ focused and recommended by other gay individuals, so that he can comfortably socialize.</li>
+                        <li>When planning a trip with others, Mira wants to organize venues to visit, so she can make an itinerary and share it with her friends.</li>
+                    </ul>
+                    <h4>Formulating Tasks</h4>
+                    <p>Form user interviews, personas, and MVP/JTBD framework, tasks were created to address user needs.</p>
+                    <ul class="numbered">
+                        <li>Perform an advanced filtered search when browsing for venues.</li>
+                        <li>Access restaurant and venue recommendations from local users.</li>
+                        <li>Access photo reviews of a restaurant or venue.</li>
+                        <li>Save restaurants and venues to a collection.</li>
+                        <li>Create a guide of favorite restaurants and venues for a certain location.</li>
+                        <li>Share real-time stories with other connected users when having a restaurant or venue experience.</li>
+                        <li>Create a collaborative itinerary with other users with restaurants and venues on the app.</li>
+                    </ul>
+                </div> <!-- close ID for MVP/JTBD/TASKS-->
+            </div> <!-- close ROW for MVP/JTBD/TASKS-->
 
-                    <!-- open image seven container -->
-                        <div class="column col-5"> 
-                            <h5>Collections, V2</h5>
-                            <picture> <!-- open image seven -->
-                                <source srcset="img/projects/modish_nest/@2x/user_testing_07@2x.png" media="(max-width:767px)">
-                                <img src="img/projects/modish_nest/@2x/user_testing_07@2x.png" alt="user testing wireframe seven">
-                            </picture>
-                        </div> 
-                        <!-- close image seven container -->
-                        
-                        <!-- open image eight container -->
-                        <div class="column col-5">
-                            <h5>Collections, V3</h5>
-                            <picture> <!-- open image eight -->
-                                <source srcset="img/projects/modish_nest/@2x/user_testing_08@2x.png" media="(max-width:767px)">
-                                <img src="img/projects/modish_nest/@2x/user_testing_08@2x.png" alt="user testing wireframe eight">
-                            </picture>
-                        </div> 
-                        <!-- close image eight container -->
-                    </div> 
-                    <!-- close test collections screens container -->
-
-                    <!-- open test collections detail screens container -->
-                    <div class="cd-images"> 
-                        <!-- open image nine container -->
-                        <div class="column col-5">
-                            <h5>Collection Detail, V1</h5>
-                            <picture> <!-- open image nine -->
-                                <source srcset="img/projects/modish_nest/@2x/user_testing_09@2x.png" media="(max-width:767px)">
-                                <img src="img/projects/modish_nest/@2x/user_testing_09@2x.png" alt="user testing wireframe nine">
-                            </picture>
-                        </div>
-                        <!-- close image six container -->
-                        
-                        <!-- open image seven container -->
-                        <div class="column col-5">
-                            <h5>Collection Detail, V2</h5>
-                            <picture> <!-- open image ten -->
-                                <source srcset="img/projects/modish_nest/@2x/user_testing_10@2x.png" media="(max-width:767px)">
-                                <img src="img/projects/modish_nest/@2x/user_testing_10@2x.png" alt="user testing wireframe ten">
-                            </picture>
-                        </div>
-                        <!-- close image ten container -->
-                    </div> 
-                    <!-- close open test collections detail screens container-->  
-                </div> 
-                <!-- close first column: for preferance test wireframes -->
-                
-                <!-- open second column: for results -->
-                <div class="results">
-                    <h3>Results</h3><div> <!-- open home results-->
-                        <div class="column col-3"> 
-                        <!-- open home results -->
-                            <h5>Home</h5>
-                            <picture> <!-- open home results image -->
-                                <source srcset="img/projects/modish_nest/@2x/results_home@2x.png" media="(max-width:767px)">
-                                <img src="img/projects/modish_nest/@2x/results_home@2x.png" alt="home screen results">
-                            </picture>
-                        </div> 
-                    <!-- close home results -->
-                    
-                    <!-- open collections results-->
-                    <div class="column col-3"> 
-                        <h5>Collections</h5>
-                        <picture> <!-- open collections results image -->
-                            <source srcset="img/projects/modish_nest/@2x/results_collections@2x.png" media="(max-width:767px)">
-                            <img src="img/projects/modish_nest/@2x/results_collections@2x.png" alt="collections screen results">
-                        </picture>
-                    </div> 
-                    <!-- close collections results -->
-                    
-                    <!-- open collection detail results-->
-                    <div class="column col-3">
-                        <h5>Collection Detail</h5>
-                        <picture> <!-- open collection detail results image -->
-                            <source srcset="img/projects/modish_nest/@2x/results_collection_detail@2x.png" media="(max-width:767px)">
-                            <img src="img/projects/modish_nest/@2x/results_collection_detail@2x.png" alt="collection detail screen results">
-                        </picture> <!-- open collection detail results-->
-                    </div> 
-                    <!-- close collection detail results-->
-                </div> 
-                <!-- close second column: for results -->
-
-                <div>
-                <!-- open third column: for quotes and suggestions -->  
-                    <h3>Quotes &amp; Suggestions</h3>
-                    <ul> <!-- open quote and suggestion listt -->
-                        <li>"I like the simple screens. The second collection version is confusing”</li>
-                        <li>Collections: “I am between versions 2 and 3 since I like the idea of a bigger image”</li>
-                        <li>Home V3: “Make the first image shorter, more like a banner, and move the icon set and carousal images up so it is more accessible”</li>    
-                    </ul> <!-- close quote and suggestion list -->
-                </div>
-                <!-- close third column: for quotes and suggestions -->
-
-                <!-- open fourth column: for design solution --> 
-                <div> 
-                    <h3>Design Solution</h3>
-                    <h4>Home V3</h4>
-                    
-                    <div class="col-md-2"> 
-                    <!-- open home screen before -->
-                        <h5>Before</h5>
-                        <picture> <!-- open collection detail results image -->
-                            <source srcset="img/projects/modish_nest/@2x/design_solution_01@2x.png" media="(max-width:767px)">
-                            <img class="wf" src="img/projects/modish_nest/@2x/design_solution_01@2x.png" alt="original home v3">
+            <div class="row"> <!-- open ROW for USER FLOW-->
+                <div id="user-flow">
+                    <div id="ufcontainer">
+                        <div id="uftext">
+                            <h3>User Flow</h3>
+                            <h4>Comprehensive Flow</h4>
+                            <ul class="tasks"> <!-- open list -->
+                                <li>Signing in</li>
+                                <li>Onboarding</li>
+                                <li>Creating a profile</li>
+                                <li>Restaurant and venue exploration with filtered search</li>
+                                <li>Saving a venue to a folder </li>
+                                <li>Creating a collaborative itinerary </li>
+                                <li>Sharing a story at a venue</li>
+                                <li>Creating a location-board</li>
+                            </ul> <!-- close list -->
+                        </div> <!-- close text container-->
+                        <div id="ufimg-container">
+                            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="540" height="335" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FygvhCF3NhQCqIXRUyfIMGX%2FSP3-Location-RWA-%2522Localite%2522-(Rachel-Radulski)%3Fpage-id%3D2501%253A1636%26type%3Ddesign%26node-id%3D2501-1637%26viewport%3D376%252C403%252C0.26%26t%3D7vgfkhP7ZlkuvCov-1%26scaling%3Dscale-down-width%26mode%3Ddesign" allowfullscreen></iframe>
+                        </div> <!-- close img container-->
+                    </div> <!-- close UF CONTAINER-->
+                </div> <!-- close USER-FLOW-->
+            </div> <!-- close ROW for USER FLOW-->
+           
+            <div class="row"> <!-- open ROW for LOFI WIREFRAMES-->
+                <div id="lofi"> <!-- open ID LOFI-->
+                    <h3>Low Fidelity Wireframes</h3>
+                    <div class="center-align"> 
+                        <picture> <!-- open image one -->
+                            <source srcset="img/projects/localite/lofi_01.jpg" media="(max-width:767px)">
+                            <img class="eighty" src="img/projects/localite/lofi_01.jpg" alt="lofi sketches">
+                        </picture> <!-- close image one -->   
+                    </div> <!-- close CLASS LOFI -->
+                </div> <!-- close ID lofi-->
+            </div> <!-- close ROW for LOFI WIREFRAMES-->
+            
+            <div class="row"> <!-- open ROW for USABILITY TEST -->
+                <div id="usability-test"> <!-- open ID for USABILTY TEST-->
+                    <h3>Usability Testing: Paper Prototype</h3>
+                    <p>Aimed to evaluate the usability of the prototype, with focus on the assessment of navigation, flow, and features. Moderated and recorded tests were conducted either in-person or remotely via screen-sharing. Three participants completed five assigned tasks within the prototype. Throughout the session, participants were encouraged to share their feedback, report any encountered problems, and provide suggestions for improvement.</p>
+                    <div id="utcontainer">
+                        <div id="uttext">
+                            <h4>Tasks</h4>
+                            <ul class="tasks">
+                                <li>Sign up</li>
+                                <li>Save a venue</li>
+                                <li>Post a story</li>
+                                <li>Create an itinerary</li>
+                                <li>Post a location board</li>
+                            </ul>
+                            <h4>Highlights</h4>
+                            <ul>
+                                <li>Users appreciated the skip button during orientation phases and the option to share the app with friends via a link instead of adding them from social media.</li>
+                                <li>The filtered search feature for saving venues was well-received, and users found it easy to navigate and complete the task.</li>
+                                <li>Users were able to post stories with ease once they found the button, and they quickly understood the flow on the feed screen.</li>
+                            </ul>
+                            <h4>Challenges</h4>
+                            <ul>
+                                <li>Users faced difficulty in navigating the screens to find where to post a story, as the prototype lacked visual differentiation. The layout was also harder to follow due to the limited clarity of the sketches.</li>
+                                <li>Some users were unsure of which screen created itineraries would post to, and they suggested having a dedicated itinerary page for better clarity.</li>
+                                <li>There were navigation challenges in finding where to create a new location board, and users were confused about the arrangement of buttons for stories and location boards.</li>
+                            </ul>
+                        </div> <!-- close text container-->
+                        <div id="utimg-container">
+                            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="320" height="620" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FygvhCF3NhQCqIXRUyfIMGX%2FSP3-Location-RWA-%2522Localite%2522-(Rachel-Radulski)%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D87-2284%26viewport%3D3044%252C4936%252C0.08%26t%3DyzJSbXlEsd0uNksN-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D87%253A2284%26mode%3Ddesign" allowfullscreen></iframe>
+                        </div> <!-- close img container-->
+                    </div> <!-- close UT CONTAINER-->
+                    <h4>Feature Suggestions</h4>
+                    <ul>
+                        <li>Clearer titles and explanations were suggested for certain screens, such as "Top Local Picks" and onboarding screens, to improve understanding and direction.</li>
+                        <li>Decreasing the number of favorite local venues to input and considering alternative terms like "list" instead of "folder" were suggested for better user comprehension.</li>
+                        <li>Users recommended adding descriptions or explanations for certain features, such as the floating tab bar and the purpose of location boards, to aid navigation and understanding.</li>
+                    </ul>
+                    <div class="srcontainer">
+                        <div class="srtext">
+                            <h4>Severity Ratings</h4>
+                            <ol start="0">
+                                <li>No usability problem</li>
+                                <li>Cosmetic problem only</li>
+                                <li>Minor usability problem</li>
+                                <li>Major usability problem</li>
+                                <li>Usability catastophe</li>
+                            </ol>
+                        </div><!-- close SR TEXT-->  
+                        <div class="srimg-container">
+                            <img src="img/projects/localite/usability_test_01.png" alt="Total error ratings">
+                        </div> <!-- close SR IMG-->
+                    </div> <!-- close SR CONTAINER-->  
+                </div> <!-- close ID for USABILITY TEST-->
+            </div> <!-- close ROW for USABILITY TEST-->
+            
+            <div class="row"> <!-- open ROW for MOODBOARD -->
+                <div id="moodboard"> <!-- open ID for MOODBOARD -->
+                    <h3>Moodboard</h3>
+                    <div class="center-align">
+                        <picture> 
+                            <source srcset="img/projects/localite/moodboard_01.jpg" media="(max-width:767px)">
+                            <img class="eighty" src="img/projects/localite/moodboard_01.jpg" alt="moodboard">
                         </picture> 
                     </div> 
-                    <!-- close home screen before -->
+                </div> <!-- close ID for MOODBOARD-->
+            </div> <!-- close ROW for MOODBOARD-->
+            
+            <div class="row"> <!-- open ROW for PREFERENCE TESTING-->
+                <div id="pref"> <!-- open ID for PREFERENCE TESTING-->
+                    <h3>A/B Preference Testing</h3>
+                    <p>This A/B testing had 31 respondents who compared two differently designed landing pages, in order for me to gather user insights and determine the preferred design that would enhance user engagement.</p>
+                    <div class="center-align">
+                        <picture> 
+                            <source srcset="img/projects/localite/preference_01.png" media="(max-width:767px)">
+                            <img class="eighty" src="img/projects/localite/preference_01.png" alt="preference test">
+                        </picture> 
+                    </div> <!-- close IMG CONTAINER-->
+                    <h4>Participants that Preferred 'A'</h4>
+                    <ul class="quote">
+                        <li>“more eye-popping”</li>
+                        <li>“I like the green portion, the other was too much of one color and kind of hurt my eyes”</li>
+                        <li>“calmer”</li>
+                        <li>“more contrast in the color”</li>
+                        <li>“drew my eyes and made me want to see more”</li>
+                        <li>“more visually interesting”</li>
+                    </ul>
+                    <h4>Participants that Preferred 'B'</h4>
+                    <ul class="quote">
+                        <li>“bright, interesting, and more inviting”</li>
+                        <li>“I liked the contrast of the green buttons rather than the green divide of the other option”</li>
+                        <li>“I like these colors better together”</li>
+                        <li>“more aesthetically pleasing”</li>
+                        <li>“nice outline and looks professional”</li>
+                        <li>“I like that the Sign Up button was in all caps”</li>
+                    </ul>
+                    <p>The test results indicated B was statistically significant, with a 90% confidence level, suggesting that the observed difference is not due to random chance.</p>
+                </div> <!-- close ID for PREFERENCE TESTING-->
+            </div> <!-- close ROW for PREFERENCE TESTING-->
 
-                    <!-- open home screen after -->
-                    <div class="col-md-2"> 
-                        <h5>After</h5>
-                        <picture>
-                            <source srcset="img/projects/modish_nest/@2x/design_solution_02@2x.png" media="(max-width:767px)">
-                            <img class="wf" src="img/projects/modish_nest/@2x/design_solution_02@2x.png" alt="reiterated home v3">
-                        </picture>
-                    </div> 
-                    <!-- close home screen after -->
-                </div> 
-                <!-- close fourth column: for design solution -->
-            </div> <!-- End row that holds (4) columns for user testing -->
-            </div> <!-- closing dive class: row-testing -->
-        
-            <div class="row">
-            <!-- Open row for branding -->
-                <div id="brand"> 
-                <!-- open fist column: for philosophy -->  
-                    <h3>Becoming a Brand</h3>
-                    <h4>Philosophy</h4>
-                    <p>Curating timeless mid-century modern furniture that reflects your unique style and tells a story of quality and innovation.</p>   
-                    <h4>Writing Style</h4>
-                    <p>Our clean, vivid, and customer centric language captures the unique features our furniture, allowing users to envision its aesthetic and functionality and understand how our furniture brings them comfort, style, and sophistication..</p>
+            <div class="row"> <!-- open ROW for MIDFI WIREFRAMES-->
+                <div id="midfi"> <!-- open ID for MIDFI WIREFRAMES-->
+                    <h3>Mid-Fidelity Wireframes</h3>
+                    <div class="center-align">
+                        <picture> <!-- open image one -->
+                            <source srcset="img/projects/localite/midfi_01.png" media="(max-width:767px)">
+                            <img class="fifteen" src="img/projects/localite/midfi_01.png" alt="midfi one">
+                        </picture> <!-- close image one -->
+                        <picture> <!-- open image two -->
+                            <source srcset="img/projects/localite/midfi_02.png" media="(max-width:767px)">
+                            <img class="fifteen" src="img/projects/localite/midfi_02.png" alt="midfi two">
+                        </picture> <!-- close image two -->
+                        <picture> <!-- open image three -->
+                            <source srcset="img/projects/localite/midfi_03.png" media="(max-width:767px)">
+                            <img class="fifteen" src="img/projects/localite/midfi_03.png" alt="midfi three">
+                        </picture> <!-- close image three -->
+                        <picture> <!-- open image four -->
+                            <source srcset="img/projects/localite/midfi_04.png" media="(max-width:767px)">
+                            <img class="fifteen" src="img/projects/localite/midfi_04.png" alt="midfi four">
+                        </picture> <!-- close image four -->
+                        <picture> <!-- open image five -->
+                            <source srcset="img/projects/localite/midfi_05.png" media="(max-width:767px)">
+                            <img class="fifteen" src="img/projects/localite/midfi_05.png" alt="midfi five">
+                        </picture> <!-- close image five -->
+                        <picture> <!-- open image six -->
+                            <source srcset="img/projects/localite/midfi_06.png" media="(max-width:767px)">
+                            <img class="fifteen" src="img/projects/localite/midfi_06.png" alt="midfi six">
+                        </picture> <!-- close image six -->
+                        <picture> <!-- open image seven -->
+                            <source srcset="img/projects/localite/midfi_07.png" media="(max-width:767px)">
+                            <img class="fifteen" src="img/projects/localite/midfi_07.png" alt="midfi seven">
+                        </picture> <!-- close image seven -->
+                        <picture> <!-- open image eight -->
+                            <source srcset="img/projects/localite/midfi_08.png" media="(max-width:767px)">
+                            <img class="fifteen" src="img/projects/localite/midfi_08.png" alt="midfi eight">
+                        </picture> <!-- close image eight -->
+                        <picture> <!-- open image nine -->
+                            <source srcset="img/projects/localite/midfi_09.png" media="(max-width:767px)">
+                            <img class="fifteen" src="img/projects/localite/midfi_09.png" alt="midfi nine">
+                        </picture> <!-- close image nine -->
+                        <picture> <!-- open image ten -->
+                            <source srcset="img/projects/localite/midfi_10.png" media="(max-width:767px)">
+                            <img class="fifteen" src="img/projects/localite/midfi_10.png" alt="midfi ten">
+                        </picture> <!-- close image ten -->
+                        <picture> <!-- open image eleven -->
+                            <source srcset="img/projects/localite/midfi_11.png" media="(max-width:767px)">
+                            <img class="fifteen" src="img/projects/localite/midfi_11.png" alt="midfi eleven">
+                        </picture> <!-- close image eleven -->
+                        <picture> <!-- open image tweleve -->
+                            <source srcset="img/projects/localite/midfi_12.png" media="(max-width:767px)">
+                            <img class="fifteen" src="img/projects/localite/midfi_12.png" alt="midfi tweleve">
+                        </picture> <!-- close image tweleve -->
+                    </div> <!-- close IMG CONTAINER-->
+                </div> <!-- close ID for MIDFI WIREFRAMES-->
+            </div> <!-- close ROW for MIDFI WIREFRAMES-->
+            
+            <div class="row"> <!-- open ROW for STYLE GUIDE-->
+                <div id="style-guide"> <!-- open ID for STYLE GUIDE-->
+                    <h3>Style Guide</h3>
                     <h4>Colors</h4>
-                    <picture> <!-- open image color palette -->
-                        <source srcset="img/projects/modish_nest/@2x/becoming_a_brand_01@2x.png" media="(max-width:767px)">
-                        <img class="wf" src="img/projects/modish_nest/@2x/becoming_a_brand_01@2x.png" alt="color palette">
-                    </picture>
-                    <h4>Typography</h4>
-                    <picture> <!-- open image typography -->
-                        <source srcset="img/projects/modish_nest/@2x/becoming_a_brand_02@2x.png" media="(max-width:767px)">
-                        <img class="twenty" src="img/projects/modish_nest/@2x/becoming_a_brand_02@2x.png" alt="typography">
-                    </picture>
-                    <h4>Custom Icons</h4>
-                    <picture> <!-- open image icons -->
-                        <source srcset="img/projects/modish_nest/@2x/becoming_a_brand_03@2x.png" media="(max-width:767px)">
-                        <img class="fifty" src="img/projects/modish_nest/@2x/becoming_a_brand_03@2x.png" alt="custom icons">
-                    </picture>
-                    <h4>Logo</h4>
-                    <picture> <!-- open image brand logo -->
-                        <source srcset="img/projects/modish_nest/@2x/becoming_a_brand_04@2x.png" media="(max-width:767px)">
-                        <img class="twenty" src="img/projects/modish_nest/@2x/becoming_a_brand_04@2x.png" alt="brand logo variations">
-                    </picture>
-                    <div class="imagery"> 
-                    <!-- open sixth column: for imagery --> 
-                        <h4>Imagery</h4>
-                        <div class="column col-3">
-                            <picture> <!-- open brand photo two -->
-                                <source srcset="img/projects/modish_nest/@2x/becoming_a_brand_05@2x.jpg" media="(max-width:767px)">
-                                <img class="example" src="img/projects/modish_nest/@2x/becoming_a_brand_05@2x.jpg" alt="brand image two">
-                            </picture>
-                        </div>
-                        <div class="column col-3"> 
-                            <picture> <!-- open brand photo one -->
-                                <source srcset="img/projects/modish_nest/@2x/becoming_a_brand_06@2x.jpg" media="(max-width:767px)">
-                                <img class="example" src="img/projects/modish_nest/@2x/becoming_a_brand_06@2x.jpg" alt="brand image one">
-                            </picture>
-                        </div>
-                        <div class="column col-3">
-                            <picture> <!-- open brand photo two -->
-                                <source srcset="img/projects/modish_nest/@2x/becoming_a_brand_07@2x-min.jpg" media="(max-width:767px)">
-                                <img class="example" src="img/projects/modish_nest/@2x/becoming_a_brand_07@2x-min.jpg" alt="brand image three">
-                            </picture>
-                        </div>
-                    </div>  
-                </div> 
-            </div>
-            <!-- End row for branding -->
+                    <picture> <!-- open image one -->
+                        <source srcset="img/projects/localite/style_guide_01.png" media="(max-width:767px)">
+                        <img class="fifty" src="img/projects/localite/style_guide_01.png" alt="colors">
+                    </picture> <!-- close image one -->
+                    <h4>Buttons</h4>
+                    <picture> <!-- open image two -->
+                        <source srcset="img/projects/localite/style_guide_02.png" media="(max-width:767px)">
+                        <img class="thirty" src="img/projects/localite/style_guide_02.png" alt="Buttons">
+                    </picture> <!-- close image two -->
+                    <h4>Input Fields</h4>
+                    <picture> <!-- open image three -->
+                        <source srcset="img/projects/localite/style_guide_03.png" media="(max-width:767px)">
+                        <img class="thirty" src="img/projects/localite/style_guide_03.png" alt="input fields">
+                    </picture> <!-- close image three -->
+                    <h4>Check Box</h4>
+                    <picture> <!-- open image five -->
+                        <source srcset="img/projects/localite/style_guide_05.png" media="(max-width:767px)">
+                        <img class="thirty" src="img/projects/localite/style_guide_05.png" alt="check box">
+                    </picture> <!-- close image five -->
+                    <h4>Icons</h4>
+                    <picture> <!-- open image four -->
+                        <source srcset="img/projects/localite/style_guide_04.png" media="(max-width:767px)">
+                        <img class="sixty" src="img/projects/localite/style_guide_04.png" alt="colors">
+                    </picture> <!-- close image four -->
+                    <h4>Imagery</h4>
+                    <picture> <!-- open image one -->
+                        <source srcset="img/projects/localite/style_guide_06.png" media="(max-width:767px)">
+                        <img class="fifty" src="img/projects/localite/style_guide_06.png" alt="imagery">
+                    </picture> <!-- close image one -->
+                    <h4>Illustrations</h4>
+                    <picture> <!-- open image one -->
+                        <source srcset="img/projects/localite/style_guide_07.png" media="(max-width:767px)">
+                        <img class="thirty" src="img/projects/localite/style_guide_07.png" alt="illustrations">
+                    </picture> <!-- close image one -->
+                    <h4>Copy Language</h4>
+                    <ul>
+                        <li>Upbeat</li>
+                        <li>Exciting</li>
+                        <li>Encouraging</li>
+                    </ul>
+                </div> <!-- close ID for STYLE GUIDE-->
+            </div> <!-- close ROW for STYLE GUIDE-->
+
+            <div class="row"> <!-- open ROW for RESPONSIVE HIFI-->
+                <div id="hifi"> <!-- open ID for RESPONSIVE HIFI-->
+                    <h3>High-Fidelity Responsive Wireframes</h3>
+                    <p>Mobile wireframes adapted to become responsive for small, medium, and large breakpoints to accommodate tablet, laptop, and desktop, and other devices. This was implemented by using a stretch grid system.</p>
+                    <div class="center-alignrd">
+                        <picture> <!-- open image one -->
+                            <source srcset="img/projects/localite/hifi_01.jpg" media="(max-width:767px)">
+                            <img src="img/projects/localite/hifi_01.jpg" alt="high-fi one">
+                        </picture> <!-- close image one -->
+                        <picture> <!-- open image otwone -->
+                            <source srcset="img/projects/localite/hifi_02.png" media="(max-width:767px)">
+                            <img src="img/projects/localite/hifi_02.png" alt="high-fi two">
+                        </picture> <!-- close image two -->
+                        <picture> <!-- open image three -->
+                            <source srcset="img/projects/localite/hifi_03.png" media="(max-width:767px)">
+                            <img src="img/projects/localite/hifi_03.png" alt="high-fi three">
+                        </picture> <!-- close image three -->
+                        <picture> <!-- open image four -->
+                            <source srcset="img/projects/localite/hifi_04.jpg" media="(max-width:767px)">
+                            <img src="img/projects/localite/hifi_04.jpg" alt="high-fi four">
+                        </picture> <!-- close image four -->
+                    </div>
+                </div> <!-- close ID for RESPONSIVE HIFI-->
+            </div> <!-- close ROW for RESPONSIVE HIFI-->
+
+             <div class="row"> <!-- open ROW for FINAL DESIGNS-->
+                <div id="final-designs"> <!-- open ID for FINAL DESIGNS-->
+                    <h3>Final Designs</h3>
+                    <div class="fdimg">
+                        <picture> <!-- open image one -->
+                            <source srcset="img/projects/localite/final_designs_01.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/localite/final_designs_01.png" alt="final design one">
+                        </picture> <!-- close image one -->
+                        <picture> <!-- open image two -->
+                            <source srcset="img/projects/localite/final_designs_02.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/localite/final_designs_02.png" alt="final design two">
+                        </picture> <!-- close image two -->
+                        <picture> <!-- open image three -->
+                            <source srcset="img/projects/localite/final_designs_03.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/localite/final_designs_03.png" alt="final design three">
+                        </picture> <!-- close image three -->
+                        <picture> <!-- open image four -->
+                            <source srcset="img/projects/localite/final_designs_04.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/localite/final_designs_04.png" alt="final design four">
+                        </picture> <!-- close image four -->
+                        <picture> <!-- open image five -->
+                            <source srcset="img/projects/localite/final_designs_05.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/localite/final_designs_05.png" alt="final design five">
+                        </picture> <!-- close image five -->
+                        <picture> <!-- open image six -->
+                            <source srcset="img/projects/localite/final_designs_06.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/localite/final_designs_06.png" alt="final design six">
+                        </picture> <!-- close image six -->
+                        <picture> <!-- open image seven -->
+                            <source srcset="img/projects/localite/final_designs_07.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/localite/final_designs_07.png" alt="final design seven">
+                        </picture> <!-- close image seven -->
+                        <picture> <!-- open image eight -->
+                            <source srcset="img/projects/localite/final_designs_08.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/localite/final_designs_08.png" alt="final design eight">
+                        </picture> <!-- close image eight -->
+                        <picture> <!-- open image nine -->
+                            <source srcset="img/projects/localite/final_designs_09.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/localite/final_designs_09.png" alt="final design nine">
+                        </picture> <!-- close image nine -->
+                        <picture> <!-- open image ten -->
+                            <source srcset="img/projects/localite/final_designs_10.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/localite/final_designs_10.png" alt="final design ten">
+                        </picture> <!-- close image ten -->
+                        <picture> <!-- open image eleven -->
+                            <source srcset="img/localite/final_designs_11.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/localite/final_designs_11.png" alt="final design eleven">
+                        </picture> <!-- close image eleven -->
+                        <picture> <!-- open image tweleve -->
+                            <source srcset="img/projects/localite/final_designs_12.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/localite/final_designs_12.png" alt="final design tweleve">
+                        </picture> <!-- close image tweleve -->
+                        <picture> <!-- open image thirteen -->
+                            <source srcset="img/projects/localite/final_designs_13.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/localite/final_designs_13.png" alt="final design thirteen">
+                        </picture> <!-- close image thirteen -->
+                        <picture> <!-- open image fourteen -->
+                            <source srcset="img/projects/localite/final_designs_14.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/localite/final_designs_14.png" alt="final design fourteen">
+                        </picture> <!-- close image fourteen -->
+                        <picture> <!-- open image fifteen -->
+                            <source srcset="img/projects/localite/final_designs_15.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/localite/final_designs_15.png" alt="final design fifteen">
+                        </picture> <!-- close image fifteen -->
+                    </div> <!-- close ID for IMG CONTAINER-->
+                    <div class="center-align">
+                        <picture> <!-- open image sixteen -->
+                            <source srcset="img/projects/localite/final_designs_16.jpg" media="(max-width:767px)">
+                            <img class="l-md-lg" src="img/projects/localite/final_designs_16.jpg" alt="tablet final design">
+                        </picture> <!-- close image sixteen -->
+                        <picture> <!-- open image seventeen -->
+                            <source srcset="img/projects/localite/final_designs_17.jpg" media="(max-width:767px)">
+                            <img class="l-md-lg" src="img/projects/localite/final_designs_17.jpg" alt="desktop final design">
+                        </picture> <!-- close image seventeen -->
+                    </div> <!-- close ID for IMG CONTAINER-->
+                </div> <!-- close ID for FINAL DESIGNS-->
+             </div> <!-- close ROW for FINAL DESIGNS-->
+             <div class="row-last"> <!-- open ROW for PROJECT LINKS-->
+                <div id="project-links">
+                    <h4>Full Length Case Study on Google Drive</h4>
+                    <a href="https://drive.google.com/file/d/1jH7d1zrxoCpBs_iw0tvb1ckmYtW6JPyx/view?usp=sharing" class="button" id="project-button" target="_blank">Go to Case Study</a> <!-- button -->
+                </div> <!-- close ID for PROJECT LINKS -->
+             </div> <!-- close ROW LAST for PROJECT LINKS-->
         
-            <div class="row-last">
-            <!-- Open row for the last section -->
-                <div id="final-designs">
-                <h3>Final Designs</h3>
-                <div class="mockups">
-                <picture> <!-- open image one -->
-                    <source srcset="img/projects/modish_nest/@2x/final_design_01@2x.png" media="(max-width:767px)">
-                    <img class="twenty" src="img/projects/modish_nest/@2x/final_design_01@2x.png" alt="final design landing">
-                </picture>
-                <picture> <!-- open image two -->
-                    <source srcset="img/projects/modish_nest/@2x/final_design_02@2x.png" media="(max-width:767px)">
-                    <img class="twenty" src="img/projects/modish_nest/@2x/final_design_02@2x.png" alt="final design home">
-                </picture>
-                <picture> <!-- open image three -->
-                    <source srcset="img/projects/modish_nest/@2x/final_design_03@2x.png" media="(max-width:767px)">
-                    <img class="twenty" src="img/projects/modish_nest/@2x/final_design_03@2x.png" alt="final design collections">
-                </picture>
-                <picture> <!-- open image four -->
-                    <source srcset="img/projects/modish_nest/@2x/final_design_04@2x.png" media="(max-width:767px)">
-                    <img class="twenty" src="img/projects/modish_nest/@2x/final_design_04@2x.png" alt="final design collection detail">
-                </picture>
-                <picture> <!-- open image five -->
-                    <source srcset="img/projects/modish_nest/@2x/final_design_05@2x.png" media="(max-width:767px)">
-                    <img class="twenty" src="img/projects/modish_nest/@2x/final_design_05@2x.png" alt="final design item detail">
-                </picture>
-                <picture> <!-- open image six -->
-                    <source srcset="img/projects/modish_nest/@1x/final_design_06@1x.png" media="(max-width:767px)">
-                    <img class="final-desktop" src="img/projects/modish_nest/@1x/final_design_06@1x.png" alt="final design desktop collections">
-                </picture>
-                </div>
-            </div>
-            <!-- End row for the last section -->
-        </div>
-        <!-- End container/wrapper -->
-    </div>
-    <!-- End whole section block --> 
-    </div> <!-- closing id div process-->
+        </div> <!-- close CONTAINER/WRAPPER-->
+    </div> <!-- close whole SECTION BLOCK: PROCESS session-->
 </main> 
 <!-- End main section -->
    
@@ -562,4 +610,3 @@
 <script src="js/scripts.js"></script>
 </body>
 </html>
-
