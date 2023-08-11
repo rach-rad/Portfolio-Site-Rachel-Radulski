@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Wix+Madefor+Display:wght@800&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/4a994b553b.js" crossorigin="anonymous"></script>
+    <title>HomeBoost</title>
+</head>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<!-- For the header -->
+	<header>
+		<!-- For the navigation -->
+		<div class="container">
+			<div class="navtoggle" id="myNavtoggle">
+				<a class="logo" href="index.html"><img src="img/general/logo@2x.png" class="logo" alt="Rachel Radulski"></a>
+				<nav>
+					<ul>
+						<li><a href="index.html" class="menu">Work</a></li>
+						<li><a href="about.html" class="menu">About</a></li>
+						<li><a href="#contact" onclick="menuToggle()" class="menu">Contact</a></li>
+						<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+   
+   <!-- Start main section -->
+ <main> <!-- For the intro section -->
+    <div id="intro"> <!-- whole section block-->
+       <div class="container"> <!-- container/wrapper -->
+        <h1>HomeBoost</h1> <!-- heading for the project one -->
+                <p> HomeBoost is a native home automation app for Android and iOS that allows users to control and manage their smart devices, create automations, and receive real-time security alerts. </p>
+        <div class="row-last"> <!-- open row that holds (2) columns for project one -->
+            <div class="column col-lg-8"> <!-- open first column: for image -->
+                <picture> <!-- open modish nest image-->
+                    <source srcset="img/home/preview_homeboost@1x.jpg" media="(max-width:767px)">
+                    <img class="pic-mn" src="img/home/preview_homeboost@1x.jpg" alt="HomeBoost">
+                </picture> <!-- close modish nest image-->
+                
+            </div> <!-- end first column: for image -->
+            <div class="column col-md-12 col-lg-4"> <!-- open second column: for text -->
+                <div class="toc">
+                    <h3>Table of Contents</h3>
+                    <a href="#process">Context &amp; Objective</a><br>
+                    <a href="#comp-analysis">Competitor Analysis</a><br>
+                    <a href="#user-flow">User Flow</a><br>
+                    <a href="#lofi">Low-Fidelity Wireframes</a><br>
+                    <a href="#research"> Research &amp; Iterations</a><br>
+                    <a href="#hifi">High-Fidelity Wireframes</a><br>
+                    <a href="#user-testing">User Testing</a><br>
+                    <a href="#final-designs">Final Designs</a><br>
+                    <a href="#project-links">Prototypes &amp; Full Case Study</a><br>
+                </div>
+            </div> <!-- end second column: for text -->
+        </div> <!-- end row that holds (2) columns for project one -->
+       </div> <!-- container/wrapper -->
+   </div> <!-- whole section block--> <!-- close intro section-->
+
+    <!-- open process section -->
+    <div id="process"> <!-- Whole section block -->
+        <div class="container"> <!-- container/wrapper-->
+            <h2>My Process</h2>
+            <div class="row"> <!-- open ROW for CONTEXT-->
+                <h3>Users</h3>
+                <p>Designed for tech-savvy homeowners and tenants who want to conveniently automate and control their homes using their mobile devices. It caters to both experienced users and novices in the field of home automation.</p>
+                <h3>Key Features</h3>
+                <ul> <!-- open feature list -->
+                    <li>Smart device management</li>
+                    <li>Automation scheduling</li>
+                    <li>Real time monitoring and alerts</li>
+                </ul> <!-- close feature list -->
+                <h3>User Problem</h3>
+                <p>Existing home automation apps present challenges for users who want to automate their smart homes through mobile devices. These apps often have complex and time-consuming setup processes, unfriendly interfaces, and inconvenient layouts, resulting in user frustration when managing and controlling multiple smart devices.</p>
+                <h3>Goal</h3>
+                <p>Provide homeowners with an easy and convenient way to automate and control various aspects of their homes, such as lighting, temperature, security, and entertainment systems, using their mobile devices.</p>
+                <h3>Solution</h3>
+                <p>Design an intuitive native app for Android and iOS that integrates a wide range of smart devices, allowing users to create personalized automations, receive real-time alerts, and manage their devices effortlessly from a single platform.</p>
+                <h3>Design Approach</h3>
+                <div class="col-lg-5"> <!-- open COL-LG-5 -->
+                    <ul> <!-- open list -->
+                        <li>iOS and Material Design Guidelines followed</li>
+                        <li>Appropriate use of color</li>
+                        <li>Utilization of native mobile design patterns</li>
+                        <li>Annotation of user gestures</li>
+                        <li>Clearly defined typographic hierarchy</li>
+                        <li>Designed for accessibility</li>
+                        <li>Intuitive and consistent UI across all screens</li>
+                        <li>Appropriate haptic sounds and feedback</li>
+                    </ul> 
+                </div> <!-- close COL-LG-5 -->
+                <div class="col-lg-7"> <!-- open COL-LG-7 -->
+                    <picture> <!-- open image one -->
+                        <source srcset="img/projects/design_approach_01.png" media="(max-width:767px)">
+                        <img class="daimg" src="img/projects/homeboost/design_approach_01.png" alt="iOS">
+                    </picture> <!-- close image one -->
+                    <picture> <!-- open image two -->
+                        <source srcset="img/projects/design_approach_02.png" media="(max-width:767px)">
+                        <img class="daimg" src="img/projects/homeboost/design_approach_02.png" alt="iOS">
+                    </picture> <!-- close image two -->
+                </div> <!-- close COL-LG-7 -->    
+            </div> <!-- close ROW for CONTEXT-->
+            
+            <div class="row"> <!-- open ROW for COMPETITOR ANALYSIS-->
+                <div id="comp-analysis">
+                    <h3>Competitor Analysis</h3>
+                    <div class="caimg">
+                        <picture> <!-- open user flow image -->
+                            <source srcset="img/projects/homeboost/competitor_analysis.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/competitor_analysis.png" alt="SmartThings Google Home">
+                        </picture> <!-- close user flow image --> 
+                    </div>
+                    <h4>Features</h4>
+                    <p>SmartThings and Google Home offer distinct features. SmartThings focuses on iOS-influenced design with variations between iOS and Android versions, while Google Home emphasizes a minimalistic layout with accent colors.</p>
+                    <h4>Patterns</h4>   
+                    <p>Both platforms employ minimalistic designs, with SmartThings utilizing white, grey, and blue accents, and Google Home emphasizing hierarchy and color indicators.</p>
+                    <h4>Layouts</h4>
+                    <p>SmartThings and Google Home have different layouts. SmartThings follows an iOS-influenced design with variations between iOS and Android versions, while Google Home features a minimalistic layout with light mode and accent colors.</p>
+                    <h4>Styles</h4>
+                    <p>SmartThings maintains consistency in its styling across different versions, while Google Home presents a minimalistic look in light mode with a variety of accent colors (transitioning to a single accent color in the future).</p>
+                </div> <!-- close ID COMPETITOR ANALYSIS-->
+            </div> <!-- close ROW for COMPETITOR ANALYSIS-->
+
+            <div class="row"> <!-- open ROW for USER FLOW-->
+                <div id="user-flow">
+                    <div id="ufcontainer">
+                        <div id="uftext">
+                            <h3>User Flow</h3>
+                            <h4>Tasks</h4>
+                            <ul class="tasks"> <!-- open list -->
+                                <li>Change thermostat schedule</li>
+                                <li>Adjust smart light brightness</li>
+                                <li>Initiate an emergency response from a notification</li>
+                            </ul> <!-- close list -->
+                        </div> <!-- close text container-->
+                        <div id="ufimg-container">
+                            <img src="img/projects/homeboost/user_flow.png" alt="user flow diagram">
+                        </div> <!-- close img container-->
+                    </div> <!-- close UF CONTAINER-->
+                </div> <!-- close USER-FLOW-->
+            </div> <!-- close ROW for USER FLOW-->
+           
+            <div class="row"> <!-- open ROW for LOFI WIREFRAMES-->
+                <div id="lofi"> <!-- open ID LOFI-->
+                    <h3>Low Fidelity Wireframes</h3>
+                    <div class="lofi"> 
+                        <h4>iOS</h4>
+                        <picture> <!-- open image one -->
+                            <source srcset="img/projects/homeboost/lofi_01.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/lofi_01.png" alt="lofi wireframe one">
+                        </picture> <!-- close image one -->   
+                        <picture> <!-- open image two -->
+                            <source srcset="img/projects/homeboost/lofi_02.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/lofi_02.png" alt="lofi wireframe two">
+                        </picture> <!-- close image two -->
+                        <picture> <!-- open image three -->
+                            <source srcset="img/projects/homeboost/lofi_03.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/lofi_03.png" alt="lofi wireframe three">
+                        </picture> <!-- close image three -->
+                        <picture> <!-- open image four -->
+                            <source srcset="img/projects/homeboost/lofi_04.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/lofi_04.png" alt="lofi wireframe four">
+                        </picture> <!-- close image four -->
+                        <picture> <!-- open image five -->
+                            <source srcset="img/projects/homeboost/lofi_05.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/lofi_05.png" alt="lofi wireframe five">
+                        </picture> <!-- close image five -->
+                        <picture> <!-- open image six -->
+                            <source srcset="img/projects/homeboost/lofi_06.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/lofi_06.png" alt="lofi wireframe six">
+                        </picture> <!-- close image six -->
+                        <picture> <!-- open image seven -->
+                            <source srcset="img/projects/homeboost/lofi_07.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/lofi_07.png" alt="lofi wireframe seven">
+                        </picture> <!-- close image seven -->
+                        <picture> <!-- open image eight -->
+                            <source srcset="img/projects/homeboost/lofi_08.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/lofi_08.png" alt="lofi wireframe eight">
+                        </picture> <!-- close image eight -->
+                        <h4>Android</h4>
+                        <picture> <!-- open image one -->
+                            <source srcset="img/projects/homeboost/lofi_09.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/lofi_09.png" alt="lofi wireframe nine">
+                        </picture> <!-- close image one -->   
+                        <picture> <!-- open image two -->
+                            <source srcset="img/projects/homeboost/lofi_10.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/lofi_10.png" alt="lofi wireframe ten">
+                        </picture> <!-- close image two -->
+                        <picture> <!-- open image three -->
+                            <source srcset="img/projects/homeboost/lofi_11.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/lofi_11.png" alt="lofi wireframe eleven">
+                        </picture> <!-- close image three -->
+                        <picture> <!-- open image four -->
+                            <source srcset="img/projects/homeboost/lofi_12.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/lofi_12.png" alt="lofi wireframe tweleve">
+                        </picture> <!-- close image four -->
+                        <picture> <!-- open image five -->
+                            <source srcset="img/projects/homeboost/lofi_13.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/lofi_13.png" alt="lofi wireframe thirteen">
+                        </picture> <!-- close image five -->
+                        <picture> <!-- open image six -->
+                            <source srcset="img/projects/homeboost/lofi_14.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/lofi_14.png" alt="lofi wireframe fourteen">
+                        </picture> <!-- close image six -->
+                        <picture> <!-- open image seven -->
+                            <source srcset="img/projects/homeboost/lofi_15.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/lofi_15.png" alt="lofi wireframe fiftheen">
+                        </picture> <!-- close image seven -->
+                        <picture> <!-- open image eight -->
+                            <source srcset="img/projects/homeboost/lofi_08.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/lofi_16.png" alt="lofi wireframe sixteen">
+                        </picture> <!-- close image eight -->
+                    </div> <!-- close CLASS LOFI -->
+                </div> <!-- close ID lofi-->
+            </div> <!-- close ROW for LOFI WIREFRAMES-->
+            
+            <div class="row"> <!-- open ROW for RESEARCH -->
+                <div id="research">
+                    <h3>Platform Research</h3>
+                    <h4>Foundations</h4>
+                    <picture> <!-- open image one -->
+                        <source srcset="img/projects/homeboost/platform_research_1.png" media="(max-width:767px)">
+                        <img class="seventy" src="img/projects/homeboost/platform_research_1.png" alt="Foundations">
+                    </picture> <!-- close image one -->
+                    <h4>Patterns</h4>
+                    <picture> <!-- open image two -->
+                        <source srcset="img/projects/homeboost/platform_research_2.png" media="(max-width:767px)">
+                        <img class="seventy" src="img/projects/homeboost/platform_research_2.png" alt="Patterns">
+                    </picture> <!-- close image two -->
+                    <h4>Styles</h4>
+                    <picture> <!-- open image three -->
+                        <source srcset="img/projects/homeboost/platform_research_3.png" media="(max-width:767px)">
+                        <img class="seventy" src="img/projects/homeboost/platform_research_3.png" alt="Styles">
+                    </picture> <!-- close image three -->
+                    <h4>Components</h4>
+                    <picture> <!-- open image four -->
+                        <source srcset="img/projects/homeboost/platform_research_4.png" media="(max-width:767px)">
+                        <img class="seventy" src="img/projects/homeboost/platform_research_4.png" alt="Components">
+                    </picture> <!-- close image four -->
+                </div> <!-- close ID for RESEARCH-->
+            </div> <!-- close ROW for RESEARCH-->
+            <div class="row"> <!-- open ROW for MID FI ITERATIONS -->
+                <h3>Mid-Fidelity Iterations</h3>
+                <p>Iterations made to mid-fidelity wireframes based on critiques and continued research on iOS and Material Design standards.</p>
+                <div id="midfi-img-container"> <!-- open IMG CONTAINER -->
+                    <picture> <!-- open image four -->
+                        <source srcset="img/projects/homeboost/midfi_iterations.png" media="(max-width:767px)">
+                        <img class="eighty" src="img/projects/homeboost/midfi_iterations.png" alt="Components">
+                    </picture> <!-- close image four -->
+                </div> <!-- close IMG CONTAINER -->
+            </div> <!-- close ROW for MIDFI ITERATIONS-->
+
+            <div class="row"> <!-- open ROW for UNITING THE PLATFORMS -->
+                <h3>Uniting the Platforms</h3>
+                <h4>Recognizing the Problem</h4>
+                <p>Material Design integrates dynamic color within its style guidelines. While developing my color scheme, I drew inspiration from iOS system colors. However, I encountered challenges when adapting individual colors to a Material Design color scheme. I had to find a solution to apply colors to my Android design that maintains coherence with the iOS version, while also adhering to the principles of Material Design.</p>
+                <h4>Finding a Solution</h4>
+                <h6>Research</h6>
+                <p>Material Design color scheme, mapping, and tokens</p>
+                <h6>Utilization of Tools</h6>
+                <p>Plug-in Material Theme Builder generates dynamic color schemes based on custom color inputs.</p>
+                <h6>Adjusting the Outcome</h6>
+                <p> Refinements need to be made to assure there is harmony between the generated colors and with the iOS version of HomeBoost.</p>
+                <div class="center-align">
+                    <picture> <!-- open image four -->
+                        <source srcset="img/projects/homeboost/uniting_platforms.png" media="(max-width:767px)">
+                        <img src="img/projects/homeboost/uniting_platforms.png" alt="MD Color Scheme Adjustment">
+                    </picture> <!-- close image four -->
+                </div> <!-- close IMG CONTAINER -->
+             </div> <!-- close ROW for UNITING the PlATFORMS-->
+
+             <div class="row"> <!-- open ROW for HIGH-FI WIREFRAMES-->
+                <div id="hifi"> <!-- open ID for HIGH-FI WIREFRAMES-->
+                    <h3>High-Fidelity Wireframes</h3>
+                    <h4>iOS</h4>
+                    <div class="hifi-wf">
+                        <picture> <!-- open image one -->
+                            <source srcset="img/projects/homeboost/highfi_01.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/highfi_01.png" alt="Hi-fi one">
+                        </picture> <!-- close image one -->
+                        <picture> <!-- open image two -->
+                            <source srcset="img/projects/homeboost/highfi_02.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/highfi_02.png" alt="Hi-fi two">
+                        </picture> <!-- close image two -->
+                        <picture> <!-- open image three -->
+                            <source srcset="img/projects/homeboost/highfi_03.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/highfi_03.png" alt="Hi-fi three">
+                        </picture> <!-- close image three -->
+                        <picture> <!-- open image four -->
+                            <source srcset="img/projects/homeboost/highfi_04.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/highfi_04.png" alt="Hi-fi three">
+                        </picture> <!-- close image four -->
+                        <picture> <!-- open image five -->
+                            <source srcset="img/projects/homeboost/highfi_05.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/highfi_05.png" alt="Hi-fi five">
+                        </picture> <!-- close image five -->
+                        <picture> <!-- open image six -->
+                            <source srcset="img/projects/homeboost/highfi_06.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/highfi_06.png" alt="Hi-fi six">
+                        </picture> <!-- close image six -->
+                    </div> <!-- close iOS WF's-->
+                    <h4>Android</h4>
+                    <div class="hifi-wf">
+                        <picture> <!-- open image seven -->
+                            <source srcset="img/projects/homeboost/highfi_07.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/highfi_07.png" alt="Hi-fi seven">
+                        </picture> <!-- close image seven -->
+                        <picture> <!-- open image eight -->
+                            <source srcset="img/projects/homeboost/highfi_08.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/highfi_08.png" alt="Hi-fi eight">
+                        </picture> <!-- close image eight -->
+                        <picture> <!-- open image nine -->
+                            <source srcset="img/projects/homeboost/highfi_09.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/highfi_09.png" alt="Hi-fi nine">
+                        </picture> <!-- close image nine -->
+                        <picture> <!-- open image ten -->
+                            <source srcset="img/projects/homeboost/highfi_10.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/highfi_10.png" alt="Hi-fi ten">
+                        </picture> <!-- close image ten -->
+                        <picture> <!-- open image eleven -->
+                            <source srcset="img/projects/homeboost/highfi_11.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/highfi_11.png" alt="Hi-fi eleven">
+                        </picture> <!-- close image eleven -->
+                        <picture> <!-- open image tweleve -->
+                            <source srcset="img/projects/homeboost/highfi_12.png" media="(max-width:767px)">
+                            <img src="img/projects/homeboost/highfi_12.png" alt="Hi-fi tweleve">
+                        </picture> <!-- close image tweleve -->
+                    </div> <!-- close iOS WF's-->
+                </div> <!-- close ID for HIGH-FI WIREFRAMES-->
+             </div> <!-- close ROW for HIGH-FI WIREFRAMES-->
+
+             <div class="row"> <!-- open ROW for USER TESTING-->
+                <div id="testing"> <!-- open ROW for USER TESTING-->
+                    <h3>User Testing</h3>
+                    <p>5 testers, a mix of iOS and Android users, participated in in-person or remote user testing. They were given prototypes tailored to their respective devices and asked to complete 3 tasks while providing feedback on design, flow, and any issues. The objective was to gather insights for improving the designs before finalization. Tasks included adjusting thermostat schedules, smart light brightness, and initiating security alarms from notifications.</p>
+                    <h4>iOS Results</h4>
+                    <h6>Problems</h6>
+                    <ul>
+                        <li>Thermostat: needed help to find the button to change schedule</li>
+                        <li>Thermostat Schedule Editor: time picker on lagging when attempting to change</li>
+                    </ul>
+                    <h6>Suggestions</h6>
+                    <ul>
+                        <li>Thermostat: have a start and end time in separate tabs to make it clear what the schedule is</li>
+                        <li>Lighting: could include a slider to adjust brightness along with the on/off toggles</li>
+                        <li>Lighting Room Control: pressing the “Save” button should keep the user on the current screen</li>
+                        <li>Security Camera (parent): include a button for alarm activation vs having to flow through a menu</li>
+                    </ul>
+                    <h4>Android Results</h4>
+                    <h6>Problems</h6>
+                    <ul>
+                        <li>Thermostat &amp; Lighting Room Control: bottom half of these screens felt too busy with amount of buttons</li>
+                    </ul>
+                    <h6>Suggestions</h6>
+                    <ul>
+                        <li>Top navigation bar: change hamburger menu to app logo</li>
+                        <li>Thermostat &amp; Lighting Room Control: replace the bottom row of buttons with the middle row of page-specific actions  include a button for alarm activation vs having to flow through a menu</li>
+                        <li>Security Camera: show all 3 actions immediately in bottom sheet immediately, instead of having it be dragged up</li>
+                    </ul>
+                    <h4> Design Solutions</h4>
+                    <div class="center-align">
+                        <picture> <!-- open image one -->
+                            <source srcset="img/projects/homeboost/user_testing_01.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/homeboost/user_testing_01.png" alt="Solutions for iOS">
+                        </picture> <!-- close image one -->
+                        <picture> <!-- open image two -->
+                            <source srcset="img/projects/homeboost/user_testing_02.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/homeboost/user_testing_02.png" alt="Solutions for Android">
+                        </picture> <!-- close image two -->
+                    </div> <!-- close IMG CONTAINER-->
+                </div> <!-- close ROW for USER TESTING-->          
+             </div> <!-- close ROW for USER TESTING-->
+
+             <div class="row"> <!-- open ROW for FINAL DESIGNS-->
+                <div id="final-designs"> <!-- open ID for FINAL DESIGNS-->
+                    <h3>Final Designs</h3>
+                    <h4>iOS</h4>
+                    <div class="fdimg">
+                        <picture> <!-- open image one -->
+                            <source srcset="img/projects/homeboost/final_designs_01.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/homeboost/final_designs_01.png" alt="iOS home">
+                        </picture> <!-- close image one -->
+                        <picture> <!-- open image two -->
+                            <source srcset="img/projects/homeboost/final_designs_02.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/homeboost/final_designs_02.png" alt="iOS thermostat">
+                        </picture> <!-- close image two -->
+                        <picture> <!-- open image three -->
+                            <source srcset="img/projects/homeboost/final_designs_03.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/homeboost/final_designs_03.png" alt="iOS thermostat schedule">
+                        </picture> <!-- close image three -->
+                        <picture> <!-- open image four -->
+                            <source srcset="img/projects/homeboost/final_designs_04.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/homeboost/final_designs_04.png" alt="iOS edit schedule">
+                        </picture> <!-- close image four -->
+                        <picture> <!-- open image five -->
+                            <source srcset="img/projects/homeboost/final_designs_05.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/homeboost/final_designs_05.png" alt="iOS lighting">
+                        </picture> <!-- close image five -->
+                        <picture> <!-- open image six -->
+                            <source srcset="img/projects/homeboost/final_designs_06.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/homeboost/final_designs_06.png" alt="iOS smart light">
+                        </picture> <!-- close image six -->
+                        <picture> <!-- open image seven -->
+                            <source srcset="img/projects/homeboost/final_designs_07.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/homeboost/final_designs_07.png" alt="iOS expanded security notification">
+                        </picture> <!-- close image seven -->
+                        <picture> <!-- open image eight -->
+                            <source srcset="img/projects/homeboost/final_designs_08.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/homeboost/final_designs_08.png" alt="iOS security camera">
+                        </picture> <!-- close image eight -->
+                        <picture> <!-- open image nine -->
+                            <source srcset="img/projects/homeboost/final_designs_09.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/homeboost/final_designs_09.png" alt="iOS security camera menu">
+                        </picture> <!-- close image nine -->
+                        <picture> <!-- open image ten -->
+                            <source srcset="img/projects/homeboost/final_designs_10.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/homeboost/final_designs_10.png" alt="iOS set alarm">
+                        </picture> <!-- close image ten -->
+                    </div> <!-- close iOS IMGS -->
+                    <h4>Android</h4>
+                    <div class="fdimg">
+                        <picture> <!-- open image eleven -->
+                            <source srcset="img/projects/homeboost/final_designs_11.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/homeboost/final_designs_11.png" alt="Android home">
+                        </picture> <!-- close image eleven -->
+                        <picture> <!-- open image twelve -->
+                            <source srcset="img/projects/homeboost/final_designs_12.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/homeboost/final_designs_12.png" alt="Android thermostat">
+                        </picture> <!-- close image twelve -->
+                        <picture> <!-- open image thirteen -->
+                            <source srcset="img/projects/homeboost/final_designs_13.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/homeboost/final_designs_13.png" alt="Android thermostat schedule">
+                        </picture> <!-- close image thirteen -->
+                        <picture> <!-- open image fourteen -->
+                            <source srcset="img/projects/homeboost/final_designs_14.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/homeboost/final_designs_14.png" alt="Android edit schedule">
+                        </picture> <!-- close image fourteen -->
+                        <picture> <!-- open image fithteen -->
+                            <source srcset="img/projects/homeboost/final_designs_15.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/homeboost/final_designs_15.png" alt="Android lighting">
+                        </picture> <!-- close image fithteen -->
+                        <picture> <!-- open image sixteen -->
+                            <source srcset="img/projects/homeboost/final_designs_16.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/homeboost/final_designs_16.png" alt="Android smart light">
+                        </picture> <!-- close image sixteen -->
+                        <picture> <!-- open image seventeen -->
+                            <source srcset="img/projects/homeboost/final_designs_17.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/homeboost/final_designs_17.png" alt="Android expanded security notification">
+                        </picture> <!-- close image seventeen -->
+                        <picture> <!-- open image eighteen -->
+                            <source srcset="img/projects/homeboost/final_designs_18.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/homeboost/final_designs_18.png" alt="Android security camera">
+                        </picture> <!-- close image eighteen -->
+                        <picture> <!-- open image nineteen -->
+                            <source srcset="img/projects/homeboost/final_designs_19.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/homeboost/final_designs_19.png" alt="Android security camera menu">
+                        </picture> <!-- close image nineteem -->
+                        <picture> <!-- open image twenty -->
+                            <source srcset="img/projects/homeboost/final_designs_20.png" media="(max-width:767px)">
+                            <img class="seventy" src="img/projects/homeboost/final_designs_20.png" alt="Android set alarm">
+                        </picture> <!-- close image twenty -->
+                    </div> <!-- close ANDROID IMGS -->
+                </div> <!-- close ID for FINAL DESIGNS-->
+             </div> <!-- close ROW for FINAL DESIGNS-->
+             <div class="row-last"> <!-- open ROW for PROJECT LINKS-->
+                <div id="project-links">
+                    <h3>Prototype &amp; Links</h3>
+                    <h4>Figma Prototypes</h4>
+                     <div class="center-align">
+                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEDBRMoFy4SrfGI49SlAlqu%2FSP4-Home-Automation-%2522HomeBoost%2522-(Rachel-Radulski)%3Fpage-id%3D346%253A27044%26type%3Ddesign%26node-id%3D362-27094%26viewport%3D508%252C202%252C0.06%26t%3DWB8pq1Fxi1sntZwF-1%26scaling%3Dscale-down%26starting-point-node-id%3D362%253A27094%26show-proto-sidebar%3D1%26mode%3Ddesign" allowfullscreen></iframe>
+                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEDBRMoFy4SrfGI49SlAlqu%2FSP4-Home-Automation-%2522HomeBoost%2522-(Rachel-Radulski)%3Fpage-id%3D346%253A27045%26type%3Ddesign%26node-id%3D362-28830%26viewport%3D586%252C1975%252C0.1%26t%3DgPG5pktgd4serBk1-1%26scaling%3Dscale-down%26starting-point-node-id%3D362%253A28830%26mode%3Ddesign" allowfullscreen></iframe>
+                    </div> <!-- close PROTOTYE EMBED CONTAINER-->
+                    <h4>Full Length Case Study on Google Drive</h4>
+                    <a href="https://drive.google.com/file/d/1jADj3L_0dL8JobQhecqNB5bu_opkRizE/view?usp=sharing" class="button" target="_blank">Go to Case Study</a> <!-- button -->
+                </div> <!-- close ID for PROJECT LINKS -->
+             </div> <!-- close ROW LAST for PROJECT LINKS-->
+        
+        </div> <!-- close CONTAINER/WRAPPER-->
+    </div> <!-- close whole SECTION BLOCK: PROCESS session-->
+</main> 
+<!-- End main section -->
+   
+  <!-- For the footer -->
+  <footer id="contact"> <!-- whole section block-->
+    <div class="container"> <!-- container/wrapper -->
+        <h2>Get in Touch</h2>
+        <p> Do you like my work and want to discuss opportunities? </p>
+        <p>Please get in touch.</p>
+        <p class="phone">Call or text: <a href="tel:3026503288">(302) 650-3288</a></p>
+        <div> <!-- open email link container -->
+            <a href="mailto:rachelrad.designs@gmail.com" class="ghost_button">Send Me an Email</a> <!-- ghost button -->
+        </div> <!-- close email link container -->
+        <div class="socials"> <!-- open social media container -->
+            <!-- open linkedin section -->
+            <a href="https://www.linkedin.com/in/rachelradulski" target="_blank">
+                <div class="svg-container">
+                    <img class="svg-logo" src="img/general/linkedin.svg" alt="LinkedIn Icon"> 
+                </div>
+            </a> <!-- close linkedin section -->
+             <!-- open dribble section -->
+             <a href="https://dribbble.com/rachel_rad" target="_blank">
+                <div class="svg-container">
+                    <img class="svg-logo" src="img/general/dribble.svg" alt="Behance Icon"> 
+                </div>
+            </a> <!-- close dribble section -->
+            <!-- open behance section -->
+            <a href="https://www.behance.net/rachelradulski" target="_blank"> 
+                <div class="svg-container">
+                    <img class="svg-logo" src="img/general/behance.svg" alt="Behance Icon"> <!-- close behance icon -->
+                </div>
+            </a> <!-- close behance section -->
+        </div> <!-- close social media container -->
+        <p>Copyright Rachel Radulski 2023</p>
+    </div> <!-- container/wrapper -->
+</footer> <!-- whole section block-->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

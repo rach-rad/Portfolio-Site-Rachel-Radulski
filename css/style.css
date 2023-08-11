@@ -64,7 +64,16 @@ h4 {
     font-size: 1.25em;
     font-weight: 500;
     line-height: 1.0;
-    color:#525252;
+    color:#333333;
+}
+
+h6 {
+    font-size: 1.15em;
+    font-weight: 500;
+    color: #404040;
+    line-height: 1;
+    margin-top: 18px;
+    margin-bottom: 0;
 }
 
 /* Header Styling */
@@ -579,6 +588,22 @@ footer{
         text-align: center;
     }
 
+/* HOMEBOOST PROJECT */
+
+    .caimg{
+        text-align: center;
+        max-width: 40%;
+    }
+
+    .tasks{
+        list-style-type: decimal;
+    }
+
+    .center-align{
+        text-align: center;
+    }
+
+  
 
 /* ANIMATION PROJECT LANDSCAPE */
 
@@ -935,7 +960,7 @@ footer{
             margin-bottom: 44px;
         }
 
-        #context, #user-flow, #wireframes, #testing, #brand, #final-designs {
+        #context, #user-flow, #wireframes, #testing, #brand, #final-designs, #process, #comp-analysis, #lofi, #research, #hifi, #user-testing, #project-links {
             scroll-margin-top: 104px; /* Equal to the height of the fixed header */
           }
 
@@ -977,8 +1002,44 @@ footer{
             margin-bottom: 32px;
         }
 
+        .da{
+            display: left;
+        }
+
+       .daimg{
+        padding: 0 44px 74px 44px;
+        max-width: 44%;
+       }
+
+       #process .col-lg-5{
+        margin: 0;
+        padding: 0;
+       }
         
-    }
+       .sixty{
+        max-width: 60%;
+        }
+
+        /* HOMEBOOST */
+        #midfi-img-container{
+            text-align: center;
+        }
+
+        .hifi-wf{
+            text-align: center;
+        }
+
+        .hifi-wf img{
+            max-width: 15%;
+            padding-left: 20px;
+        }
+
+        .seventy{
+            max-width: 70%;
+        }
+      
+}
+
 
 
     
@@ -1139,10 +1200,49 @@ footer{
           #intro{
             padding: 44px 0;
           }
+          
+             /* HOMEBOOST */
+       
+         #ufcontainer {
+            display:flex;
+            align-items:flex-start; 
+         }
+        #ufcontainer ul {
+            min-width:474px;
+            box-sizing:border-box; 
+         }
+        #ufimg-container {
+            min-width:16.25em;
+         }   
+        #ufimg-container img {
+            display:block;
+            width:100%;
+            height:auto; 
+            margin-top: 44px;   
+         }
+          
+         #uftext{
+            display: block;
+         }
 
-        
+         .lofi img {
+            max-width: 12%;
+            padding: 8px;
+         }
 
-        
+         .eighty{
+            max-width: 80%;
+         }
+
+         .fdimg{
+            text-align: center;
+         }
+         .fdimg img{
+            max-width: 18%;
+         }
+         
+
+         
     }
         
         
@@ -1155,5 +1255,3 @@ footer{
 
     
 
-   
-        

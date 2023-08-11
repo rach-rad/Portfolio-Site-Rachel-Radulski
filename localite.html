@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Wix+Madefor+Display:wght@800&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/4a994b553b.js" crossorigin="anonymous"></script>
+    <title>Localite</title>
+</head>
+<body>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<!-- For the header -->
+	<header>
+		<!-- For the navigation -->
+		<div class="container">
+			<div class="navtoggle" id="myNavtoggle">
+				<a class="logo" href="index.html"><img src="img/general/logo@2x.png" class="logo" alt="Rachel Radulski"></a>
+				<nav>
+					<ul>
+						<li><a href="index.html" class="menu">Work</a></li>
+						<li><a href="about.html" class="menu">About</a></li>
+						<li><a href="#contact" onclick="menuToggle()" class="menu">Contact</a></li>
+						<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+   
+   <!-- Start main section -->
+ <main> <!-- For the intro section -->
+    <div id="intro"> <!-- whole section block-->
+       <div class="container"> <!-- container/wrapper -->
+        <h1>Localite</h1> <!-- heading for the project one -->
+                <p> Modish Nest is a furniture store responsive web app that brings style and sophistication into living spaces. At Modish Nest, furniture is curated into carefully selected collections that embody the timeless elegance and innovative designs of the mid-century era, while seamlessly blending with the contemporary aesthetic of today. </p>
+        <div class="row-last"> <!-- open row that holds (2) columns for project one -->
+            <div class="column col-lg-8"> <!-- open first column: for image -->
+                <picture> <!-- open modish nest image-->
+                    <source srcset="img/home/preview_localite@1x.jpg" media="(max-width:767px)">
+                    <img class="pic-mn" src="img/home/preview_localite@1x.jpg" alt="Localite">
+                </picture> <!-- close modish nest image-->
+                
+            </div> <!-- end first column: for image -->
+            <div class="column col-md-12 col-lg-4"> <!-- open second column: for text -->
+                <div class="toc">
+                    <h3>Table of Contents</h3>
+                    <a href="#context">Context &amp; Objective</a><br>
+                    <a href="#user-flow">User Flow</a><br>
+                    <a href="#wireframes">Wireframes</a><br>
+                    <a href="#testing">User Testing</a><br>
+                    <a href="#brand">Brand Guidelines</a><br>
+                    <a href="#final-designs">Final Designs</a><br>
+                </div>
+            </div> <!-- end second column: for text -->
+        </div> <!-- end row that holds (2) columns for project one -->
+       </div> <!-- container/wrapper -->
+   </div> <!-- whole section block--> <!-- close intro section-->
+
+    <!-- open process section -->
+
+    <div id="process"> <!-- Whole section block -->
+      
+        <div class="container"> <!-- Container/wrapper -->
+            <h2>My Process</h2>
+        <!-- Open my process sections -->
+
+            <!-- Open row that holds (6) columns for context and objective -->    
+            <div>
+                <!-- open first column: for objective -->
+                <div id="context"> 
+                    <h3>Objective</h3>
+                    <p>Develop a user-friendly online shopping tool for mid-century modern furniture.</p>
+                </div> 
+                <!-- end first column: for objective -->
+
+                <!-- open second column: for audience -->
+                <div> 
+                    <h3>Audience</h3>
+                    <p>Adults aged 25 to 45 who prefer online shopping due to time constraints, difficulty finding desired items in physical stores, and the convenience of trying out and returning products without the need for in-person visits. </p>
+                </div> 
+                <!-- end second column: for audience -->
+
+                <!-- open third column: for time and accesability -->
+                <div> 
+                    <h3>Time &amp; Accessibility</h3>
+                    <p>Users can conveniently shop from anywhere with an internet connection during various time frames. This could be on a mobile device or desktop, a lunch break or on weekends, or on the go.</p>
+                </div> 
+                <!-- end third column: for time and accesability -->
+                
+                <!-- open fourth column: for user problems -->
+                <div> 
+                    <h3>User Problem</h3>
+                    <p>Furniture shopping in physical stores can be challenging for users due to limited availability, time constraints, and confusing navigation systems. Additionally, returning items in person can be a hassle. Online furniture stores also pose difficulties, such as limited product visibility, misleading item representations, complicated return processes, lack of personalized assistance, and overwhelming home page designs filled with excessive product displays and ads. These issues make it harder for users to have a smooth and enjoyable experience while searching for and purchasing their desired furniture and decor pieces.</p>
+                </div> 
+                <!-- end fourth column: for user problems -->
+                
+                <!-- open fith column: for goal -->
+                <div> 
+                    <h3>Goal</h3>
+                    <p>Make it easy for users to effortlessly browse through a wide selection of mid-century modern furniture, discover new items, find products that meet their needs, and complete transactions and returns with ease.</p>
+                </div> 
+                <!-- end fith column: for goal -->
+                
+                <!-- open sixth column: for solution -->
+                <div> 
+                    <h3>Solution</h3>
+                    <p>Develop a seamless and accessible responsive web app that simplifies the shopping process for mid-century modern furniture. The web app will offer a wide range of furniture and decor products, provide a user-friendly interface for easy browsing and selection, facilitate secure online transactions, and offer hassle-free return options. This solution aims to enhance the convenience and satisfaction of users while shopping for mid-century modern furniture online.</p>
+                </div> 
+                <!-- end sixth column: for solution -->
+            </div> 
+            <!-- End row that holds (6) columns for context and objective -->
+            
+            <!-- Open row that holds (2) columns for user stories and flow -->
+            <div id="user-flow">
+                
+                <!-- open first column: for user stories -->
+                <div> 
+                    <h3>User Stories</h3>
+                    <ul> <!-- open user story list -->
+                        <!-- open orange tag list item-->
+                        <li>“As a new customer, I want to access the inventory without having to register, so that I can make sure this store has what I’m looking for before having to create an account.”</li>
+                        <!-- open green tag list item-->
+                        <li>“As a customer, I want to have access to advanced filtering options, so that I don’t have to browse through a lot of products to find what I’m looking for.”</li>
+                        <!-- open pink tag list item-->
+                        <li>“As a returning customer, I want to be able to save items that I cannot buy to a wish list, so that I can purchase them at a later date.”</li>    
+                    </ul> <!-- close user story list -->
+                </div> 
+                <!-- end first column: for user stories -->
+                
+                <!-- open second column: for user flow -->
+                <div> 
+                    <h3>User Flow</h3>       
+                    <picture> <!-- open user flow image -->
+                        <source srcset="img/projects/modish_nest/@2x/user_flow@2x.png" media="(max-width:767px)">
+                        <img src="img/projects/modish_nest/@2x/user_flow@2x.png" alt="user flow diagram">
+                    </picture> <!-- close user flow image --> 
+                </div> 
+                <!-- end second column: for user flow -->
+
+            </div>
+            <!-- End row that holds (2) columns for user stories and flow -->
+      
+            <!-- Open row that holds (2) columns for wireframes -->
+            <div id="wireframes">
+
+                <!-- open first column: for lowfi wireframes -->
+                <div> 
+                    <h3>Low Fidelity Wireframes</h3>
+                    <p>“As a new customer, I want to access the inventory without having to register, so that I can make sure this store has what I’m looking for before having to create an account.”</p>
+                    
+                    <!-- open mobile lofi wireframes-->
+                    <div class="mobile-wireframes"> 
+                        <h4>Mobile</h4>
+                        <picture> <!-- open image one -->
+                            <source srcset="img/projects/modish_nest/@2x/lofi_01@2x.png" media="(max-width:767px)">
+                            <img src="img/projects/modish_nest/@2x/lofi_01@2x.png" alt="lofi wireframe one">
+                        </picture> <!-- close image one -->   
+                        <picture> <!-- open image two -->
+                            <source srcset="img/projects/modish_nest/@2x/lofi_02@2x.png" media="(max-width:767px)">
+                            <img src="img/projects/modish_nest/@2x/lofi_02@2x.png" alt="lofi wireframe two">
+                        </picture> <!-- close image two -->
+                        <picture> <!-- open image three -->
+                            <source srcset="img/projects/modish_nest/@2x/lofi_03@2x.png" media="(max-width:767px)">
+                            <img src="img/projects/modish_nest/@2x/lofi_03@2x.png" alt="lofi wireframe three">
+                        </picture> <!-- close image three -->
+                        <picture> <!-- open image four -->
+                            <source srcset="img/projects/modish_nest/@2x/lofi_04@2x.png" media="(max-width:767px)">
+                            <img src="img/projects/modish_nest/@2x/lofi_04@2x.png" alt="lofi wireframe four">
+                        </picture> <!-- close image four -->
+                        <picture> <!-- open image five -->
+                            <source srcset="img/projects/modish_nest/@2x/lofi_05@2x.png" media="(max-width:767px)">
+                            <img src="img/projects/modish_nest/@2x/lofi_05@2x.png" alt="lofi wireframe five">
+                        </picture> <!-- close image five -->
+                        <picture> <!-- open image six -->
+                            <source srcset="img/projects/modish_nest/@2x/lofi_06@2x.png" media="(max-width:767px)">
+                            <img src="img/projects/modish_nest/@2x/lofi_06@2x.png" alt="lofi wireframe six">
+                        </picture> <!-- close image six -->
+                        <picture> <!-- open image seven -->
+                            <source srcset="img/projects/modish_nest/@2x/lofi_07@2x.png" media="(max-width:767px)">
+                            <img src="img/projects/modish_nest/@2x/lofi_07@2x.png" alt="lofi wireframe seven">
+                        </picture> <!-- close image seven -->
+                        <picture> <!-- open image eight -->
+                            <source srcset="img/projects/modish_nest/@2x/lofi_08@2x.png" media="(max-width:767px)">
+                            <img src="img/projects/modish_nest/@2x/lofi_08@2x.png" alt="lofi wireframe eight">
+                        </picture> <!-- close image eight -->
+                    </div> 
+                    <!-- close mobile lofi wireframes-->
+                    
+                    <!-- open desktop lofi wireframes -->
+                    <div class="desktop-wireframes"> 
+                        <h4>Desktop</h4> 
+                        <picture> <!-- open image nine -->
+                            <source srcset="img/projects/modish_nest/@2x/lofi_09@2x.png" media="(max-width:767px)">
+                            <img src="img/projects/modish_nest/@2x/lofi_09@2x.png" alt="lofi wireframe nine">
+                        </picture> <!-- close image nine -->   
+                        <picture> <!-- open image ten -->
+                            <source srcset="img/projects/modish_nest/@2x/lofi_10@2x.png" media="(max-width:767px)">
+                            <img src="img/projects/modish_nest/@2x/lofi_10@2x.png" alt="lofi wireframe ten">
+                        </picture> <!-- close image ten -->
+                        <picture> <!-- open image eleven -->
+                            <source srcset="img/projects/modish_nest/@2x/lofi_11@2x.png" media="(max-width:767px)">
+                            <img src="img/projects/modish_nest/@2x/lofi_11@2x.png" alt="lofi wireframe eleven">
+                        </picture> <!-- close image eleven -->
+                    </div> 
+                    <!-- close desktop lofi wireframes -->  
+                </div> 
+                <!-- end first column: for lofi wireframes -->
+                
+                <div class="midfi-wireframes"> 
+                <!-- open second column: for midfi wireframes -->
+                    <h3>Mid-Fidelity Wireframes</h3>
+                    <picture> <!-- open image one -->
+                        <source srcset="img/projects/modish_nest/@2x/midfi_01@2x.png" media="(max-width:767px)">
+                        <img src="img/projects/modish_nest/@2x/midfi_01@2x.png" alt="midfi wireframe one">
+                    </picture> <!-- close image one -->   
+                    <picture> <!-- open image two -->
+                        <source srcset="img/projects/modish_nest/@2x/midfi_02@2x.png" media="(max-width:767px)">
+                        <img src="img/projects/modish_nest/@2x/midfi_02@2x.png" alt="midfi wireframe two">
+                    </picture> <!-- close image two -->
+                    <picture> <!-- open image three -->
+                        <source srcset="img/projects/modish_nest/@2x/midfi_03@2x.png" media="(max-width:767px)">
+                        <img src="img/projects/modish_nest/@2x/midfi_03@2x.png" alt="midfi wireframe three">
+                    </picture> <!-- close image three -->
+                    <picture> <!-- open image four -->
+                        <source srcset="img/projects/modish_nest/@2x/midfi_04@2x.png" media="(max-width:767px)">
+                        <img src="img/projects/modish_nest/@2x/midfi_04@2x.png" alt="midfi wireframe four">
+                    </picture> <!-- close image four -->
+                    <picture> <!-- open image five -->
+                        <source srcset="img/projects/modish_nest/@2x/midfi_05@2x.png" media="(max-width:767px)">
+                        <img src="img/projects/modish_nest/@2x/midfi_05@2x.png" alt="midfi wireframe five">
+                    </picture> <!-- close image five -->
+                    <picture> <!-- open image six -->
+                        <source srcset="img/projects/modish_nest/@2x/midfi_06@2x.png" media="(max-width:767px)">
+                        <img class="midfi-desktop" src="img/projects/modish_nest/@2x/midfi_06@2x.png" alt="midfi wireframe six">
+                    </picture> <!-- close image six -->
+                </div> 
+                <!-- close second column: for midfi wireframes --> 
+            </div>
+            <!-- End row that holds (2) columns for wireframes -->
+
+            <!-- Open row that holds (4) columns for user testing -->
+            <div class="row">
+
+                <!-- open first column: for preferance test wireframes -->
+                <div id="testing"> 
+                    <h3>User Testing</h3>   
+                    <p>To begin user testing, I conducted a preference test with three participants aimed to create a user-centric design aligned with the target audience's tastes. </p>
+                    
+                    <!-- open home screen tests container -->
+                    <div class="home-images"> 
+                        <div class="column col-5">  <!-- open image one container -->
+                            <h5>Home, V1</h5>
+                            <picture> <!-- open image one -->
+                                <source srcset="img/projects/modish_nest/@2x/user_testing_01@2x.png" media="(max-width:767px)">
+                                <img src="img/projects/modish_nest/@2x/user_testing_01@2x.png" alt="user testing wireframe one">
+                            </picture>
+                        </div> <!-- close image one container -->
+                           
+                        <div class="column col-5"> <!-- open image two container -->
+                            <h5>Home, V2</h5>
+                            <picture> <!-- open image two -->
+                                <source srcset="img/projects/modish_nest/@2x/user_testing_02@2x.png" media="(max-width:767px)">
+                                <img src="img/projects/modish_nest/@2x/user_testing_02@2x.png" alt="user testing wireframe two">
+                            </picture>
+                        </div> <!-- close image two container -->
+                        
+                        <div class="column col-5"> <!-- open image three container -->
+                            <h5>Home, V3</h5>
+                            <picture> <!-- open image three -->
+                                <source srcset="img/projects/modish_nest/@2x/user_testing_03@2x.png" media="(max-width:767px)">
+                                <img src="img/projects/modish_nest/@2x/user_testing_03@2x.png" alt="user testing wireframe three">
+                            </picture>
+                        </div> <!-- close image three container -->
+                        
+                        <div class="column col-5">  <!-- open image four container -->
+                            <h5>Home, V4</h5>
+                            <picture> <!-- open image four -->
+                                <source srcset="img/projects/modish_nest/@2x/user_testing_04@2x.png" media="(max-width:767px)">
+                                <img src="img/projects/modish_nest/@2x/user_testing_04@2x.png" alt="user testing wireframe four">
+                            </picture>
+                        </div> <!-- close image four container -->   
+            
+                        <div class="column col-5"> <!-- open image five container -->
+                            <h5>Home, V5</h5>
+                            <picture> <!-- open image five -->
+                                <source srcset="img/projects/modish_nest/@2x/user_testing_05@2x.png" media="(max-width:767px)">
+                                <img src="img/projects/modish_nest/@2x/user_testing_05@2x.png" alt="user testing wireframe five">
+                            </picture>
+                        </div> <!-- close image five container -->
+                        
+                    </div> <!-- close home screens container -->
+                    
+                    
+                    <!-- open test collections screens container -->
+                    <div class="c-images"> 
+                        <div class="column col-5"> <!-- open image six container -->
+                            <h5>Collections, V1</h5>
+                            <picture> <!-- open image six -->
+                                <source srcset="img/projects/modish_nest/@2x/user_testing_06@2x.png" media="(max-width:767px)">
+                                <img src="img/projects/modish_nest/@2x/user_testing_06@2x.png" alt="user testing wireframe six">
+                            </picture>
+                        </div> 
+                        <!-- close image six container -->
+
+                    <!-- open image seven container -->
+                        <div class="column col-5"> 
+                            <h5>Collections, V2</h5>
+                            <picture> <!-- open image seven -->
+                                <source srcset="img/projects/modish_nest/@2x/user_testing_07@2x.png" media="(max-width:767px)">
+                                <img src="img/projects/modish_nest/@2x/user_testing_07@2x.png" alt="user testing wireframe seven">
+                            </picture>
+                        </div> 
+                        <!-- close image seven container -->
+                        
+                        <!-- open image eight container -->
+                        <div class="column col-5">
+                            <h5>Collections, V3</h5>
+                            <picture> <!-- open image eight -->
+                                <source srcset="img/projects/modish_nest/@2x/user_testing_08@2x.png" media="(max-width:767px)">
+                                <img src="img/projects/modish_nest/@2x/user_testing_08@2x.png" alt="user testing wireframe eight">
+                            </picture>
+                        </div> 
+                        <!-- close image eight container -->
+                    </div> 
+                    <!-- close test collections screens container -->
+
+                    <!-- open test collections detail screens container -->
+                    <div class="cd-images"> 
+                        <!-- open image nine container -->
+                        <div class="column col-5">
+                            <h5>Collection Detail, V1</h5>
+                            <picture> <!-- open image nine -->
+                                <source srcset="img/projects/modish_nest/@2x/user_testing_09@2x.png" media="(max-width:767px)">
+                                <img src="img/projects/modish_nest/@2x/user_testing_09@2x.png" alt="user testing wireframe nine">
+                            </picture>
+                        </div>
+                        <!-- close image six container -->
+                        
+                        <!-- open image seven container -->
+                        <div class="column col-5">
+                            <h5>Collection Detail, V2</h5>
+                            <picture> <!-- open image ten -->
+                                <source srcset="img/projects/modish_nest/@2x/user_testing_10@2x.png" media="(max-width:767px)">
+                                <img src="img/projects/modish_nest/@2x/user_testing_10@2x.png" alt="user testing wireframe ten">
+                            </picture>
+                        </div>
+                        <!-- close image ten container -->
+                    </div> 
+                    <!-- close open test collections detail screens container-->  
+                </div> 
+                <!-- close first column: for preferance test wireframes -->
+                
+                <!-- open second column: for results -->
+                <div class="results">
+                    <h3>Results</h3><div> <!-- open home results-->
+                        <div class="column col-3"> 
+                        <!-- open home results -->
+                            <h5>Home</h5>
+                            <picture> <!-- open home results image -->
+                                <source srcset="img/projects/modish_nest/@2x/results_home@2x.png" media="(max-width:767px)">
+                                <img src="img/projects/modish_nest/@2x/results_home@2x.png" alt="home screen results">
+                            </picture>
+                        </div> 
+                    <!-- close home results -->
+                    
+                    <!-- open collections results-->
+                    <div class="column col-3"> 
+                        <h5>Collections</h5>
+                        <picture> <!-- open collections results image -->
+                            <source srcset="img/projects/modish_nest/@2x/results_collections@2x.png" media="(max-width:767px)">
+                            <img src="img/projects/modish_nest/@2x/results_collections@2x.png" alt="collections screen results">
+                        </picture>
+                    </div> 
+                    <!-- close collections results -->
+                    
+                    <!-- open collection detail results-->
+                    <div class="column col-3">
+                        <h5>Collection Detail</h5>
+                        <picture> <!-- open collection detail results image -->
+                            <source srcset="img/projects/modish_nest/@2x/results_collection_detail@2x.png" media="(max-width:767px)">
+                            <img src="img/projects/modish_nest/@2x/results_collection_detail@2x.png" alt="collection detail screen results">
+                        </picture> <!-- open collection detail results-->
+                    </div> 
+                    <!-- close collection detail results-->
+                </div> 
+                <!-- close second column: for results -->
+
+                <div>
+                <!-- open third column: for quotes and suggestions -->  
+                    <h3>Quotes &amp; Suggestions</h3>
+                    <ul> <!-- open quote and suggestion listt -->
+                        <li>"I like the simple screens. The second collection version is confusing”</li>
+                        <li>Collections: “I am between versions 2 and 3 since I like the idea of a bigger image”</li>
+                        <li>Home V3: “Make the first image shorter, more like a banner, and move the icon set and carousal images up so it is more accessible”</li>    
+                    </ul> <!-- close quote and suggestion list -->
+                </div>
+                <!-- close third column: for quotes and suggestions -->
+
+                <!-- open fourth column: for design solution --> 
+                <div> 
+                    <h3>Design Solution</h3>
+                    <h4>Home V3</h4>
+                    
+                    <div class="col-md-2"> 
+                    <!-- open home screen before -->
+                        <h5>Before</h5>
+                        <picture> <!-- open collection detail results image -->
+                            <source srcset="img/projects/modish_nest/@2x/design_solution_01@2x.png" media="(max-width:767px)">
+                            <img class="wf" src="img/projects/modish_nest/@2x/design_solution_01@2x.png" alt="original home v3">
+                        </picture> 
+                    </div> 
+                    <!-- close home screen before -->
+
+                    <!-- open home screen after -->
+                    <div class="col-md-2"> 
+                        <h5>After</h5>
+                        <picture>
+                            <source srcset="img/projects/modish_nest/@2x/design_solution_02@2x.png" media="(max-width:767px)">
+                            <img class="wf" src="img/projects/modish_nest/@2x/design_solution_02@2x.png" alt="reiterated home v3">
+                        </picture>
+                    </div> 
+                    <!-- close home screen after -->
+                </div> 
+                <!-- close fourth column: for design solution -->
+            </div> <!-- End row that holds (4) columns for user testing -->
+            </div> <!-- closing dive class: row-testing -->
+        
+            <div class="row">
+            <!-- Open row for branding -->
+                <div id="brand"> 
+                <!-- open fist column: for philosophy -->  
+                    <h3>Becoming a Brand</h3>
+                    <h4>Philosophy</h4>
+                    <p>Curating timeless mid-century modern furniture that reflects your unique style and tells a story of quality and innovation.</p>   
+                    <h4>Writing Style</h4>
+                    <p>Our clean, vivid, and customer centric language captures the unique features our furniture, allowing users to envision its aesthetic and functionality and understand how our furniture brings them comfort, style, and sophistication..</p>
+                    <h4>Colors</h4>
+                    <picture> <!-- open image color palette -->
+                        <source srcset="img/projects/modish_nest/@2x/becoming_a_brand_01@2x.png" media="(max-width:767px)">
+                        <img class="wf" src="img/projects/modish_nest/@2x/becoming_a_brand_01@2x.png" alt="color palette">
+                    </picture>
+                    <h4>Typography</h4>
+                    <picture> <!-- open image typography -->
+                        <source srcset="img/projects/modish_nest/@2x/becoming_a_brand_02@2x.png" media="(max-width:767px)">
+                        <img class="twenty" src="img/projects/modish_nest/@2x/becoming_a_brand_02@2x.png" alt="typography">
+                    </picture>
+                    <h4>Custom Icons</h4>
+                    <picture> <!-- open image icons -->
+                        <source srcset="img/projects/modish_nest/@2x/becoming_a_brand_03@2x.png" media="(max-width:767px)">
+                        <img class="fifty" src="img/projects/modish_nest/@2x/becoming_a_brand_03@2x.png" alt="custom icons">
+                    </picture>
+                    <h4>Logo</h4>
+                    <picture> <!-- open image brand logo -->
+                        <source srcset="img/projects/modish_nest/@2x/becoming_a_brand_04@2x.png" media="(max-width:767px)">
+                        <img class="twenty" src="img/projects/modish_nest/@2x/becoming_a_brand_04@2x.png" alt="brand logo variations">
+                    </picture>
+                    <div class="imagery"> 
+                    <!-- open sixth column: for imagery --> 
+                        <h4>Imagery</h4>
+                        <div class="column col-3">
+                            <picture> <!-- open brand photo two -->
+                                <source srcset="img/projects/modish_nest/@2x/becoming_a_brand_05@2x.jpg" media="(max-width:767px)">
+                                <img class="example" src="img/projects/modish_nest/@2x/becoming_a_brand_05@2x.jpg" alt="brand image two">
+                            </picture>
+                        </div>
+                        <div class="column col-3"> 
+                            <picture> <!-- open brand photo one -->
+                                <source srcset="img/projects/modish_nest/@2x/becoming_a_brand_06@2x.jpg" media="(max-width:767px)">
+                                <img class="example" src="img/projects/modish_nest/@2x/becoming_a_brand_06@2x.jpg" alt="brand image one">
+                            </picture>
+                        </div>
+                        <div class="column col-3">
+                            <picture> <!-- open brand photo two -->
+                                <source srcset="img/projects/modish_nest/@2x/becoming_a_brand_07@2x-min.jpg" media="(max-width:767px)">
+                                <img class="example" src="img/projects/modish_nest/@2x/becoming_a_brand_07@2x-min.jpg" alt="brand image three">
+                            </picture>
+                        </div>
+                    </div>  
+                </div> 
+            </div>
+            <!-- End row for branding -->
+        
+            <div class="row-last">
+            <!-- Open row for the last section -->
+                <div id="final-designs">
+                <h3>Final Designs</h3>
+                <div class="mockups">
+                <picture> <!-- open image one -->
+                    <source srcset="img/projects/modish_nest/@2x/final_design_01@2x.png" media="(max-width:767px)">
+                    <img class="twenty" src="img/projects/modish_nest/@2x/final_design_01@2x.png" alt="final design landing">
+                </picture>
+                <picture> <!-- open image two -->
+                    <source srcset="img/projects/modish_nest/@2x/final_design_02@2x.png" media="(max-width:767px)">
+                    <img class="twenty" src="img/projects/modish_nest/@2x/final_design_02@2x.png" alt="final design home">
+                </picture>
+                <picture> <!-- open image three -->
+                    <source srcset="img/projects/modish_nest/@2x/final_design_03@2x.png" media="(max-width:767px)">
+                    <img class="twenty" src="img/projects/modish_nest/@2x/final_design_03@2x.png" alt="final design collections">
+                </picture>
+                <picture> <!-- open image four -->
+                    <source srcset="img/projects/modish_nest/@2x/final_design_04@2x.png" media="(max-width:767px)">
+                    <img class="twenty" src="img/projects/modish_nest/@2x/final_design_04@2x.png" alt="final design collection detail">
+                </picture>
+                <picture> <!-- open image five -->
+                    <source srcset="img/projects/modish_nest/@2x/final_design_05@2x.png" media="(max-width:767px)">
+                    <img class="twenty" src="img/projects/modish_nest/@2x/final_design_05@2x.png" alt="final design item detail">
+                </picture>
+                <picture> <!-- open image six -->
+                    <source srcset="img/projects/modish_nest/@1x/final_design_06@1x.png" media="(max-width:767px)">
+                    <img class="final-desktop" src="img/projects/modish_nest/@1x/final_design_06@1x.png" alt="final design desktop collections">
+                </picture>
+                </div>
+            </div>
+            <!-- End row for the last section -->
+        </div>
+        <!-- End container/wrapper -->
+    </div>
+    <!-- End whole section block --> 
+    </div> <!-- closing id div process-->
+</main> 
+<!-- End main section -->
+   
+  <!-- For the footer -->
+  <footer id="contact"> <!-- whole section block-->
+    <div class="container"> <!-- container/wrapper -->
+        <h2>Get in Touch</h2>
+        <p> Do you like my work and want to discuss opportunities? </p>
+        <p>Please get in touch.</p>
+        <p class="phone">Call or text: <a href="tel:3026503288">(302) 650-3288</a></p>
+        <div> <!-- open email link container -->
+            <a href="mailto:rachelrad.designs@gmail.com" class="ghost_button">Send Me an Email</a> <!-- ghost button -->
+        </div> <!-- close email link container -->
+        <div class="socials"> <!-- open social media container -->
+            <!-- open linkedin section -->
+            <a href="https://www.linkedin.com/in/rachelradulski" target="_blank">
+                <div class="svg-container">
+                    <img class="svg-logo" src="img/general/linkedin.svg" alt="LinkedIn Icon"> 
+                </div>
+            </a> <!-- close linkedin section -->
+             <!-- open dribble section -->
+             <a href="https://dribbble.com/rachel_rad" target="_blank">
+                <div class="svg-container">
+                    <img class="svg-logo" src="img/general/dribble.svg" alt="Behance Icon"> 
+                </div>
+            </a> <!-- close dribble section -->
+            <!-- open behance section -->
+            <a href="https://www.behance.net/rachelradulski" target="_blank"> 
+                <div class="svg-container">
+                    <img class="svg-logo" src="img/general/behance.svg" alt="Behance Icon"> <!-- close behance icon -->
+                </div>
+            </a> <!-- close behance section -->
+        </div> <!-- close social media container -->
+        <p>Copyright Rachel Radulski 2023</p>
+    </div> <!-- container/wrapper -->
+</footer> <!-- whole section block-->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
+
