@@ -61,10 +61,11 @@ h3 {
     color: #3D3D3D;
 }
 h4 {
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: 500;
     line-height: 1.0;
     color:#333333;
+    margin-bottom: 4px;
 }
 
 h6 {
@@ -303,6 +304,9 @@ nav>ul>li>a {
     background-color: #d78000; /* Add an orange background on hover */
   }
   
+  #project-button{
+    margin-top: 28px;
+  }
 
 /* Images */
   img {
@@ -746,7 +750,8 @@ footer{
           }
 
         body {
-            font-size: 16px;            /* changes changes font size from 16px to 18px */
+            font-size: 16px;  
+            margin-top: 4px;          /* changes changes font size from 16px to 18px */
         }
 
         main {
@@ -875,8 +880,12 @@ footer{
         }
 
         #process h4{
-            margin-bottom: 24px;
+            margin-bottom: 4px;
             text-align: left;
+        }
+
+        #process body{
+            margin-top: 4px;
         }
 
 
@@ -1020,7 +1029,7 @@ footer{
         max-width: 60%;
         }
 
-        /* HOMEBOOST */
+    /* HOMEBOOST */
         #midfi-img-container{
             text-align: center;
         }
@@ -1037,8 +1046,145 @@ footer{
         .seventy{
             max-width: 70%;
         }
+
+    /* LOCALITE */
+        #yelp{
+            max-width: 11%;
+        }
+
+        #foursquare{
+            max-width: 25%;
+            margin-top: 40px;
+        }
+
+       .quote{
+            font-style: italic;
+        }
+
+        .upcontainer {
+            display:flex;
+            align-items:center; 
+            margin-bottom: 28px;
+         }
+        .upcontainer ul {
+            min-width:474px;
+            box-sizing:border-box; 
+         }
+        .upimg-container {
+            max-width:100%;
+         }   
+        .upimg-container img {
+            display:block;
+            width:240px;
+            height:auto; 
+            margin-top: 8px;  
+            margin-right: 64px; 
+         }
+          
+         .uptext{
+            display: block;
+         }
+
+         .numbered{
+            list-style-type: decimal;
+         }
+
+         #utcontainer {
+            display:flex;
+            align-items:center; 
+            margin-bottom: 28px;
+         }
+        #utcontainer ul {
+            min-width:474px;
+            box-sizing:border-box; 
+         }
+        #utimg-container {
+            max-width:100%;
+         }   
+        #utimg-container img {
+            display:block;
+            width:240px;
+            height:auto; 
+            margin-top: 8px;  
+            margin-right: 64px; 
+            margin-left: 24px;
+         }
+          
+         #uttext{
+            display: block;
+            margin-right: 24px;
+         }
+
+         .srimg-container img {
+            display:block;
+            width:60%;
+            height:auto; 
+            margin-top: 8px;  
+            margin-right: 64px; 
+         }
+         .srcontainer {
+            display:flex;
+            align-items:flex-start; 
+         }
+        .srcontainer ol {
+            min-width: 250px;
+            box-sizing:border-box; 
+         }
+        .srimg-container {
+            max-width:80%;
+         }   
+          .srtext h4{
+            margin-top: 0;
+          }
+         .srtext{
+            display: block;
+         }
+
+         .ten{
+            max-width: 10%;
+         }
+
+         .fifteen{
+            max-width: 15%;
+            padding: 0 12px 12px 12px;
+         }
+
+         .center-alignrd{
+            display: flex;
+            align-items: flex-start;
+         }
+
+         .center-alignrd img{
+            margin-top: 12px;
+            margin-right: 12px;
+            margin-left: 12px;
+            padding-left: 20px;
+            padding-right: 20px;
+         }
+
+         .fourty{
+            max-width: 40%;
+         }
+
+         .thirtyfive{
+            max-width: 35%;
+         }
+
+         .thirty{
+            max-width: 30%;
+         }
+
+         .l-md-lg{
+            max-width: 40%;
+            margin: 44px 44px 0 44px;
+         }
+
+    }
+         
+
+
+
       
-}
 
 
 
@@ -1240,7 +1386,11 @@ footer{
          .fdimg img{
             max-width: 18%;
          }
-         
+
+         /* LOALITE */
+         #toc-localite h3{
+            margin-top: 0;
+         }
 
          
     }
