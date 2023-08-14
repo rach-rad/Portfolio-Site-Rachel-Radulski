@@ -1179,16 +1179,72 @@ footer{
             margin: 44px 44px 0 44px;
          }
 
+          /* FRESHTUNES */
+          .caftcontainer {
+            display:flex;
+            align-items:center; 
+            margin-bottom: 28px;
+         }
+        .caftcontainer ul {
+            min-width:474px;
+            box-sizing:border-box; 
+         }
+        .caftimg-container {
+            max-width:100%;
+         }   
+        .caftimg-container img {
+            display:block;
+            width:120px;
+            height:auto; 
+            margin-top: 8px;  
+            margin-right: 0; 
+            margin-left: 44px;
+         }
+          
+         .cafttext{
+            display: block;
+         }
+
+         #no-marg{
+            padding-bottom: 0;
+            margin-bottom: 0;
+         }
+
+         #no-marg li {
+            padding-bottom: 0;
+         }
+
+         .dpimg-container {
+            max-width: 40%;
+         }
+
+         .dpimg-container img {
+            max-width: 75%;
+            padding-left: 24px;
+            margin-left: 64px;
+         }
+
+         .dpcontainer {
+            display:flex;
+            align-items:center;
+            justify-content: space-around;
+         }
+         
+         .fdimgft{
+            text-align: center;
+         }
+
+         .fdimgft img {
+            max-width: 15%;
+            margin: 16px 24px;
+         }
+
     }
          
 
 
 
       
-
-
-
-    
 
     /* ==============================
     Large devices (1024px or larger)
@@ -1391,6 +1447,13 @@ footer{
          #toc-localite h3{
             margin-top: 0;
          }
+
+         #no-marg ul {
+            padding-bottom: 0;
+         }
+
+
+         
 
          
     }
