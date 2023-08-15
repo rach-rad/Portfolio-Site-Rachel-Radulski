@@ -579,6 +579,10 @@ footer{
         padding-left: 24px;
     }
 
+    #process ol{
+        padding-left: 24px;
+    }
+
     .example{
         padding: 12px;
     }
@@ -877,6 +881,11 @@ footer{
         #process ul{
             padding-left: 24px;
             padding-bottom: 16px;
+        }
+
+        #context ul{
+            padding-left: 24px;
+            padding-bottom: 0;
         }
 
         #process h4{
@@ -1179,7 +1188,7 @@ footer{
             margin: 44px 44px 0 44px;
          }
 
-          /* FRESHTUNES */
+    /* FRESHTUNES */
           .caftcontainer {
             display:flex;
             align-items:center; 
@@ -1238,6 +1247,84 @@ footer{
             max-width: 15%;
             margin: 16px 24px;
          }
+
+     /* DEV PORTFOLIO */
+
+        .dimg-container {
+            max-width: 100%;
+        }
+
+        .dcontainer {
+            display:flex;
+            align-items:flex-start;
+            flex-direction: column;
+            padding: 0 32px;
+        }
+
+        #d-three {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+        }
+        
+        .dimg-container img {
+            max-width: 100%;
+        }
+
+        .dtext{
+            display: block;
+        }
+
+        .ner{
+            max-width: 80%;
+            margin-top: 32px;
+        }
+
+        .hner{
+            margin-top: 36px;
+        }
+
+        .twentyfive{
+            max-width: 25%;
+        }
+
+    /* VIA EUROASIA */
+        #style-guide h6{
+            margin-bottom: 24px;
+        }
+
+        .fiftytwo{
+            max-width: 52%;
+        }
+
+        .line {
+            display: flex;
+        }
+
+        .line h6 {
+            display: block;
+        }
+
+        .ninty{
+            max-width: 90%;
+        }
+
+        .img-one{
+            max-width: 40%;
+        }
+
+        .img-two{
+            max-width: 40%;
+        }
+
+        #redesign img {
+            margin-top: 24px;
+        }
+
+       
+
+
+         
 
     }
          
